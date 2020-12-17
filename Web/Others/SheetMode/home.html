@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheetMode</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/hover.min.css">
+  <link rel="stylesheet" href="css/ionicons.css">
+  <style>
+    html,body{
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    body > .row{
+      height: 100%;
+    }
+    /* .a{
+      background-color: chartreuse;
+    }
+    .b{
+      background-color: cyan;
+    }*/
+    .c{
+      opacity: 0.5;
+    }
+    .content{
+      height: 100%;
+    }
+    .content .card{
+      min-height: 300px;
+      margin-top: 10px;
+    }
+    ul{
+      list-style: none;
+      padding: 0px;
+    }
+    ul li{
+      text-align: center;
+    }
+    .navbar{
+      color: white;
+    }
+    .card-body img{
+      height: 150px;
+    }
+    .card-body p::first-letter{
+      font-weight: bold;
+    }
+
+    .card-body{
+      height: 100px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="col-12">
+      <div class="navbar bg-dark">
+        <div class="col-8">
+          <div class="navbar">
+            <span class="navbar-toggler-icon ion-log-out"></span>
+            <span class="navbar-toggler-icon ion-person"></span>
+            <span class="ion-android-create"></span>
+            <span class="navbar-toggler-icon ion-chatboxes"><sup>2</sup></span>
+            <span class="navbar-toggler-icon ion-android-notifications"><sup>3</sup></span>
+          </div>
+        </div>
+        <div class="search float-right">
+          <div class="row">
+            <div class="col-9">
+              <input type="text" name="srch_txt" id="srch_txt" class="form-control col-11">
+            </div>
+            <div class="col-1">
+              <button class="btn btn-primary ion-search float-right"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card col-8 offset-2 mt-3 p-0">
+            <div class="card-header">
+              <span class="card-title font-weight-bold">
+                Assignment
+              </span><br>
+              <span class="card-subtitle small">
+                (COC) Cagayan de Oro College
+              </span>
+            </div>
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, error! Eius error sint sed ipsa enim nobis rerum amet laboriosam aperiam necessitatibus, vitae maxime nisi unde eum, temporibus consequatur blanditiis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolorem maiores repellendus! Asperiores corrupti earum excepturi iusto modi, recusandae praesentium repellat delectus maiores quae? A sequi nesciunt repudiandae laudantium veritatis!
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="navbar-toggler ion-ios-cloud-download float-right"></span>
+              <a href="#" class="card-link">See more</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

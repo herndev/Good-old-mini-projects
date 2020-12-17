@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="button-group">
+  <button id="btn-start" type="button" class="button">Start Streaming</button>
+  <button id="btn-stop" type="button" class="button">Stop Streaming</button>
+  <button id="btn-capture" type="button" class="button">Capture Image</button>
+</div>  
+
+<!-- Video Element & Canvas -->
+<div class="play-area">
+  <div class="play-area-sub">
+    <h3>The Stream</h3>
+    <video id="stream" width="320" height="240"></video>
+  </div>
+  <div class="play-area-sub">
+    <h3>The Capture</h3>
+    <canvas id="capture" width="320" height="240"></canvas>
+    <div id="snapshot"></div>
+  </div>
+</div>
+<script type="text/javascript" src="main.js">
+</script>
+</body>
+</html>

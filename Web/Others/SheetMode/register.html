@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheetMode</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/hover.min.css">
+  <link rel="stylesheet" href="css/ionicons.css">
+  <style>
+    body{
+      color:teal;
+    }
+    input, select{
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="row m-3">
+    <div class="col-lg-4 offset-lg-4 mt-5">
+      <legend class="font-weight-bold">Register</legend>
+      <form action="#" class="form-group mb-4">
+        <input type="text" class="form-control" placeholder="Email" name="Email" id="email">
+        <input type="text" class="form-control" placeholder="Username" name="Username" id="username">
+        <select class="form-control">
+          <option value="">Select school</option>
+          <option value="ustp">University of Science and Technology of Southern Philippines</option>
+          <option value="cu">Capitol University</option>
+          <option value="coc">Cagayan de Oro College</option>
+        </select>
+        <div class="row">
+          <div class="col-lg-6 mt-3 pt-1">
+            <label class="ml-3">Birth month & year:</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="month" name="Bdate" id="bdate" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="Middle name">
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <input type="password" class="form-control" placeholder="Password" name="Password" id="password">
+        <input type="password" class="form-control" placeholder="Retype-password" name="RePassword" id="repassword">
+        <button type="submit" class="btn btn-block btn-primary lg mt-3">Sign-Up</button>
+      </form>
+      <span class="small">Already have an account? <a href="#" class="font-weight-bold">SignIn</a>.</span>
+    </div>
+  </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

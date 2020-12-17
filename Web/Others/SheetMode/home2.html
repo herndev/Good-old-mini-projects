@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheetMode</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/hover.min.css">
+  <link rel="stylesheet" href="css/ionicons.css">
+  <style>
+    body{
+      box-sizing: border-box;
+      color: darkslategray;
+    }
+    nav{
+      min-height: 50px;
+    }
+    .nav{
+      color: white;
+    }
+    nav li:first-child{
+      margin-right: auto;
+    }
+    .nav-link{
+      color:darkgrey;
+    }
+    .nav-link:hover{
+      color: white;
+    }
+    .navers li:first-child{
+      margin-right: auto;
+    }
+    .navers li:last-child{
+      margin-left: auto;
+    }
+    .carder{
+      max-width: 500px;
+    }
+    .card-body{
+      height: 100px;
+      overflow: hidden;
+    }
+    .m{
+      width: 100%;
+    }
+    nav:first-child li:first-child{
+      color: orange;
+      font-weight: bold;
+    }
+    
+    .card-footer{
+      color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <nav class="col-12 bg-dark animated fadeInLeft">
+      <ul class="nav">
+        <li class="navbar-toggler animated bounceInRight hvr-pulse-grow">SMode <span class="navbar-brand ion-arrow-graph-up-right"></span></li>
+        <li class="hvr-grow"><a href="#" class="nav-link navbar-brand ion-person"></a></li>
+        <li class="hvr-grow"><a href="#" class="nav-link navbar-brand ion-chatboxes"></a></li>
+        <li class="hvr-grow"><a href="#" class="nav-link navbar-brand ion-android-notifications"></a></li>
+        <li class="hvr-grow"><a href="#" class="nav-link navbar-brand ion-log-out"></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="col-10 offset-1 mt-2">
+      <div class="row">
+        <div class="col-6 pl-0 pr-0">
+          <div class="row animated fadeInLeft">
+            <div class="col-9 pr-0">
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-3 pl-2">
+              <button class="btn btn-primary"><span class="ion-search"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 pr-0">
+          <butto class="btn btn-success float-right animated fadeInRight hvr-pulse-shrink">New post<span class="ion-android-create ml-3"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 offset-1 mt-2 p-0">
+      <!-- CONTENT -->
+      <div class="card animated bounceInLeft">
+        <div class="card-header">
+          <div class="row">
+            <div class="ml-2">
+              <img src="#" height="50px" width="50px">
+            </div>
+            
+            <div class="col-auto">
+              <span class="card-title font-weight-bold">
+                Math
+              </span><br>
+              <span class="cad-subtitle small">
+                (U) University
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid iste, error quo obcaecati blanditiis cupiditate, sequi necessitatibus ut quasi minima rem. Nisi iusto eius officia at sapiente deleniti placeat accusamus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid iste, error quo obcaecati blanditiis cupiditate, sequi necessitatibus ut quasi minima rem. Nisi iusto eius officia at sapiente deleniti placeat accusamus.
+          </span>
+        </div>
+        <div class="card-footer">
+          <span class="hvr-grow btn navbar-brand ion-arrow-up-a p-0 m-0"> 4</span>
+          <span class="hvr-grow btn navbar-brand ion-ios-paper-outline ml-5"></span>
+          <span class="hvr-grow btn navbar-brand ion-ios-cloud-download float-right p-0 m-0"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row animated bounceInUp">
+    <div class="col-10 offset-1 bg-dark card mt-3">
+      <ul class="navbar nav navers">
+        <li class="hvr-grow btn"><span class="ion-arrow-left-b"></span> Previous</li>
+        <!-- <li class="mr-2 ml-2"><a href="#" class="nav-link">1</a></li>
+        <li class="mr-2 ml-2"><a href="#" class="nav-link">2</a></li>
+        <li class="mr-2 ml-2"><a href="#" class="nav-link">3</a></li> -->
+        <li class="hvr-grow btn">Next <span class="ion-arrow-right-b"></span></li>
+      </ul>
+    </div>
+  </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

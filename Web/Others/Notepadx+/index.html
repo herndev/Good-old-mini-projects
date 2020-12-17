@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Notepadx+</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+  	<header>
+	  	<div class="banner_icon"></div>
+  		<h6>H</h6><h5>E</h5><h4>R</h4><h3>N</h3><h2>I</h2><h1>E</h1>
+  		<h1>J</h1><h2>A</h2><h3>B</h3><h4>I</h4><h5>E</h5><h6>N</h6><br>
+  		<h6>SHARE, GREATER THAN WHAT</h6><br>
+  		<h4>YOUR EYES CAN SEE</h4>
+  		<!--
+  		<h1 class="banner_text"><strong>H</strong>er knee</h1>
+  		<h3 class="banner_sub"><strong>H</strong>ave yen</h3>
+  		-->
+   	</header>
+  	<nav>
+  		<ul>
+  			<li><a href="#" onClick="home()">Home</a></li>
+  			<li><a href="#" onClick="contact()">Contact</a></li>
+  			<li><a href="#" onClick="about()">About</a></li>
+  			<button class="btnnav signin" onClick="signIn()">SignIn</button>
+  			<button class="btnnav signup" onClick="signUp()">SignUp</button>
+  		</ul>
+  		<button class="btnsearch srch" onClick="search()">Search</button>
+  		<input type="text" name="search" class="edttxt_search srch" id="edttxt_search">
+  	</nav>
+  	<content>
+  		<div class="container" id="container">
+  			<div class="wrapper-1">
+  				<div class="content">
+
+  				</div>
+  			</div>
+  			<div class="wrapper-2">
+  				<div class="content">
+
+  				</div>
+  			</div>
+  			<div class="wrapper-3">
+  				<div class="content">
+
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class="wrapper-signin" id="wrapper-signin">
+  			<div class="si-info"></div>
+  			<table class="tbform">
+  				<th colspan="2">LOGIN</th>
+  				<tr>
+  					<td><h4>Username:</h4></td>
+  					<td><input type="text" name="edttxt_username" class="edttxt_username"></td>
+  				</tr>
+  				<tr>
+  					<td><h4>Password:</h4></td>
+  					<td><input type="Password" name="edttxt_password" class="edttxt_password"></td>
+  				</tr>
+  				<tr>
+  					<td colspan="2">
+  						<button type="button" id="SignIn" class="btnnav si">SignIn
+  						</button>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td colspan="2"><h5 align="center"></h5></td>
+  				</tr>
+  			</table>
+  		</div>
+
+
+  		<div class="wrapper-signup" id="wrapper-signup">
+  			<div class="su-info" ></div>
+  			<table class="tbform">
+  				<th colspan="2">REGISTER</th>
+  				<tr>
+  					<td><h4>Username:</h4></td>
+  					<td><input type="text" name="edttxt_username" id="edttxt_username" class="edttxt_username"></td>
+  				</tr>
+  				<tr>
+  					<td><h4>Email:</h4></td>
+  					<td><input type="text" name="edttxt_email" id="edttxt_email" class="edttxt_username"></td>
+  				</tr>
+  				<tr>
+  					<td><h4>Password:</h4></td>
+  					<td><input type="Password" name="edttxt_password" id="edttxt_password" class="edttxt_password"></td>
+  				</tr>
+  				<tr>
+  					<td><h4>Retype-Password:</h4></td>
+  					<td><input type="Password" name="edttxt_repassword" id="edttxt_repassword" class="edttxt_repassword"></td>
+  				</tr>
+  				<tr>
+  					<td colspan="2">
+  						<button type="button" onClick="SignUp()" class="btnnav su"> SignUp
+  						</button>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td colspan="2"><h4 align="center" id="stat"></h4></td>
+  				</tr>
+  			</table>
+  		</div>
+  		<div class="wrapper-contact" id="wrapper-contact">
+  			<div class="content">
+  				<h1 class="content-header">Contact Us</h1>
+  			</div>
+  		</div>
+  		<div class="wrapper-about" id="wrapper-about">
+  			<div class="content">
+  				<h1 class="content-header">About Us</h1>
+  			</div>
+  		</div>
+  	</content>
+  	<footer>
+  		<div class="footer-content">
+  			<span><h2>Call us: 09264760564</h2>Copy right 2019 SYNTAXER @ All Rights Reserved.</span>
+  		</div>
+  	</footer>
+  </body>
+</html>
