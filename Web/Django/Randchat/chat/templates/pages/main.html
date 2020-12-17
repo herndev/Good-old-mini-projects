@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="row mt-3">
+		<div class="col-3">
+			<div class="card">
+				<div class="card-body">
+					<h5>Welcome, {{ username }}</h5>
+					<button class="btn btn-danger btn-block text-white mt-4">Random chat</button>
+					<button class="btn btn-warning btn-block text-white" hidden>Create room</button>
+					<button class="btn btn-success btn-block" hidden>Join room</button>
+					<h6 class="font-weight-bold mt-4">Rooms</h6>
+					<hr>
+					<button class="btn btn-secondary btn-block">Community</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-9">
+			<div class="card">
+				<div class="card-header bg-dark">
+					<i class="float-right ion-ios-settings btn-lg p-0 text-dark"></i>
+					<h5 class="text-white font-weight-bold">Randchat</h5>
+				</div>
+				<div class="card-body convo-box bg-lighter">
+					{% for message in messages %}
+						{% if message.user_id == user_id %}
+							<div class="row">
+								<div class="col">
+									<div class="row float-right">
+										<div class="col">
+											<div class="bg-white text-dark msg-me">
+												<p class="mb-0">{{ message.message }}</p>
+											</div>
+											<p>
+												<span class="float-right small mr-2">{{ message.time.time }}</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% else %}
+							<div class="row">
+								<div class="col">
+									<div class="row float-left">
+										<div class="col">
+											<p class="mb-0">
+												{% if message.gender == 'female' %}
+													<span class="text-danger font-weight-bold">@{{ message.username }}</span>
+												{% else %}
+													<span class="text-primary font-weight-bold">@{{ message.username }}</span>
+												{% endif %}
+											</p>
+											<div class="bg-primary text-white msg-me">
+												<p class="mb-0">{{ message.message }}</p>
+											</div>
+											<p>
+												<span class="small ml-2">{{ message.time.time }}</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}					
+				</div>
+				<div class="card-footer bg-dark">
+					<form action="/send/" class="form-group form-inline" method="POST">
+						{% if not user_active %}
+							<textarea name="message" rows="1" class="form-control col" placeholder="Message.."></textarea>
+							<button type="submit" class="btn btn-primary form-control">Send</button>
+						{% else %}
+							<textarea name="message" rows="1" class="form-control col" placeholder="Message.." disabled></textarea>
+							<button type="submit" class="btn btn-primary form-control" disabled>Send</button>
+						{% endif %}
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

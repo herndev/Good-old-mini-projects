@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row mt-5 mb-5">
+        <div class="col">
+            <h3 class="col text-center">USERS</h3>
+            <div class="card" overflow="scroll" id="admin_user">
+                <table border="1px solid black">
+                    <tr>
+                        <th>Action</th>
+                        <th>ID</th>
+                        <th>Code name</th>
+                        <th>Fname</th>
+                        <th>Lname</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                    {% for user in users %}
+                        <tr>
+                            <td>
+                                <form action="/forum/deluserrequest/{{ user.id }}/" method="POST">
+                                    <button class="btn btn-danger btn-block">Delete</button><button class="btn btn-warning btn-block">Block</button>
+                                </form>
+                            </td>
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.code_name }}</td>
+                            <td>{{ user.f_name }}</td>
+                            <td>{{ user.l_name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.pwd }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row mt-5 mb-5">
+        <div class="col">
+            <h3 class="col text-center">POSTS</h3>
+            <div class="card" overflow="scroll" id="admin_user">
+                <table border="1px solid black">
+                    <tr>
+                        <th>ID</th>
+                        <th>Poster ID</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                    </tr>
+                    {% for post in posts %}
+                        <tr>
+                            <td>{{ post.id }}</td>
+                            <td>{{ post.poster_id }}</td>
+                            <td>{{ post.title }}</td>
+                            <td>{{ post.posted_at.date }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row mt-5 mb-5">
+        <div class="col">
+            <h3 class="col text-center">BLOCKED</h3>
+            <div class="card" overflow="scroll" id="admin_user">
+                <table border="1px solid black">
+                    <tr>
+                        <th>ID</th>
+                        <th>Code name</th>
+                        <th>Fname</th>
+                        <th>Lname</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </tr>
+                    <!-- {% for user in users %}
+                        <tr>
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.code_name }}</td>
+                            <td>{{ user.f_name }}</td>
+                            <td>{{ user.l_name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.pwd }}</td>
+                        </tr>
+                    {% endfor %} -->
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

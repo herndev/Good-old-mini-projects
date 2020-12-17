@@ -1,0 +1,49 @@
+== 1.1.0 ==
+	- Fixed issue with YITH Quick view plugin
+
+	
+== 1.0.9 ==
+	* Added Sidebar options for shop pages
+	* Added background option for breadcrumbs
+	* Added padding options for breadcrumbs
+	* Added Color options for breadcrumbs
+	* Added option to show/hide featured image on single posts
+	* Minor CSS improvements
+	
+	
+== 1.0.8 ==
+	* Fixed breadcrumb issue on Punte Template
+	* Fixed sidebar issue on Punte Template
+
+== 1.0.7 ==
+	* CSS refinements
+	* Fixed footer messing issue on elementor layout
+
+== 1.0.6 ==
+	* Minor CSS improvements
+	* Added Starter Content
+
+
+== 1.0.5 ==
+	* Refined styles
+	* Refined welcome page
+	
+== 1.0.4 ==
+	*Changed Screenshot 
+	*Changed Theme URI
+
+
+== 1.0.3 ==
+	*Changed Screenshot 
+	*Added welcome page
+
+== 1.0.2 ==
+	*Fixed keyboard navigation issue
+	*Fixed minor sanitization issue
+
+== 1.0.1 ==
+	*Added plugin installation via TGM
+	*Minor improvements
+
+== 1.0.0 ==
+	*Initial Release

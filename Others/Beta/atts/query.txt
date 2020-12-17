@@ -1,0 +1,49 @@
+select B.course_code, B.course, G.fname as 'Teacher FName', G.lname as 'Teacher LName', E.bldg, D.room_number, A.time_start, A.time_end from class A join course B on A.course_id = B.id join section C on A.section_id = C.id join classroom D on A.classroom_id = D.id join bldg E on D.bldg_id = E.id join student_info F on A.section_id = F.section_id and A.course_id = F.course_id join user G on G.id_number = A.teacher_id
+
+
+select * from student_info where student_id = '$std_id'
+while(course, std_id){
+
+}
+
+
+while(courses){
+	select count(*) from attendance where course and idnumber and remarks = P
+
+}
+
+SELECT (select count(remarks) FROM attendance where remarks= 'P' and student_info_id=4) as 'Present',(select count(remarks) FROM attendance where remarks= 'A' student_info_id=4) as 'Absent', (select count(remarks) FROM attendance where remarks= 'L' student_info_id=4) as 'Late' FROM `attendance`
+
+
+SELECT (select count(remarks) FROM attendance where remarks= 'P' and student_info_id=4 and class_id=) as 'Present',(select count(remarks) FROM attendance where remarks= 'A' and student_info_id=4 and class_id=) as 'Absent', (select count(remarks) FROM attendance where remarks= 'L' and student_info_id=4 and class_id=) as 'Late' FROM `attendance` limit 1
+
+
+SELECT A.date_and_time, C.course, C.course_code, A.remarks, B.teacher_id, D.student_id FROM `attendance` A join class B on A.class_id = B.id join course C on B.course_id = C.id join student_info D on D.id = A.student_info_id ORDER by date_and_time desc
+
+Select (select fname, mname, lname from user where id_number = ) as student_name, (select fname, mname, lname from user where id_number = ) as teacher_name from attendance ORDER by date_and_time desc
+
+Select (select fname from user where id_number = '".$student_id5."') as 'std_f', (select mname from user where id_number = '".$student_id5."') as 'std_m', (select lname from user where id_number = '".$student_id5."') as 'std_l', (select fname from user where id_number = '".$teacher_id5."') as 't_f', (select mname from user where id_number = '".$teacher_id5."') as 't_m', (select lname from user where id_number = '".$teacher_id5."') as 't_l' from attendance ORDER by date_and_time desc
+
+
+select A.fname, A.mname, A.lname from user A join type B on A.type_id = B.id join where type = 'teacher'
+
+SELECT A.id, B.course_code, C.section, E.bldg, D.room_number, A.time_start, A.time_end from class A join course B on B.id = A.course_id join section C on C.id = A.section_id join classroom D on D.id = A.classroom_id join bldg E on E.id = D.bldg_id where teacher_id = 2018101674
+
+
+SELECT s.id, c.course_code, sc.section, u.fname, u.mname, u.lname from student_info s join course c on c.id = s.course_id join section sc on sc.id = s.section_id join class cl on cl.course_id =c.id and cl.section_id = sc.id join user u on u.id_number = cl.teacher_id WHERE s.student_id = '2018131021'
+
+select * from student_info A join class B on A.section_id = B.section_id and A.course_id = B.course_id join user C on C.id_number = A.student_id WHERE B.teacher_id = '2018101674'
+
+SELECT DISTINCT course_code FROM `class` A join course B on B.id = A.course_id where A.teacher_id = '2018101674'
+
+SELECT section, B.id FROM class A join section B on B.id = A.section_id where course_id = 1 and teacher_id = '2018101674'
+
+---------------------------------------------------------
+SELECT A.id as 'student_info_id', C.id as 'class_id', fname, lname, mname, id_number FROM `student_info` A join user B on B.id_number = A.student_id join class C on C.course_id = A.course_id and C.section_id = A.section_id where A.course_id = 1 and A.section_id = 5
+
+
+SELECT A.id as 'student_info_id', C.id as 'class_id', fname, lname, mname, id_number, (select count(remarks) from attendance where remarks = 'P') FROM `student_info` A join user B on B.id_number = A.student_id join class C on C.course_id = A.course_id and C.section_id = A.section_id join attendance D on D.classroom_id = C.id and D.student_info_id = A.id where A.course_id = 1 and A.section_id = 5
+
+SELECT A.id as 'student_info_id', C.id as 'class_id', fname, lname, mname, id_number, (select count(remarks) from attendance where remarks = 'P') as 'Present' FROM `student_info` A join user B on B.id_number = A.student_id join class C on C.course_id = A.course_id and C.section_id = A.section_id where A.course_id = 1 and A.section_id = 5
+
+SELECT A.id as 'student_info_id', C.id as 'class_id', fname, lname, mname, id_number, (select count(remarks) from attendance where remarks = 'P' and attendance.class_id=C.id and attendance.student_info_id=A.id) as 'present', (select count(remarks) from attendance where remarks = 'A' and attendance.class_id=C.id and attendance.student_info_id=A.id) as 'absent', (select count(remarks) from attendance where remarks = 'L' and attendance.class_id=C.id and attendance.student_info_id=A.id) as 'late' FROM `student_info` A join user B on B.id_number = A.student_id join class C on C.course_id = A.course_id and C.section_id = A.section_id where A.course_id = 1 and A.section_id = 5

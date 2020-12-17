@@ -1,0 +1,43 @@
+[
+	{
+		"id":"1",
+		"name":"1st Year",
+		"parent_id":"0"
+	},
+	{
+		"id":"2",
+		"name":"2nd Year",
+		"parent_id":"0"
+	},
+	{
+		"id":"3",
+		"name":"3rd Year",
+		"parent_id":"0"
+	},
+	{
+		"id":"4",
+		"name":"4th Year",
+		"parent_id":"0"
+	}
+	{
+		"id":"5",
+		"name":"R1",
+		"parent_id":"1"
+	},
+	{
+		"id":"6",
+		"name":"R2",
+		"parent_id":"1"
+	},
+	{
+		"id":"7",
+		"name":"R3",
+		"parent_id":"2"
+	},
+	{
+		"id":"8",
+		"name":"R4",
+		"parent_id":"2"
+	}
+
+]

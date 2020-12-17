@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Text color */
+.text-skyblue{
+    color: skyblue;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-red{
+    color: tomato;
+}
+
+.text-orange{
+    color: orange;
+}
+
+.text-oranged{
+    color: orangered;
+}
+
+/* Background color */
+.bg-bronze{
+    background-color: sandybrown;
+}
+
+/* Others */
+.display-inline{
+    display: inline;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.display-block{
+    display: block;
+}
+
+/* Content */
+header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.contact-info{
+    margin-left: auto;
+}
+
+.contact-info div{
+    display: inline;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/me.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner p{
+    font-size: xx-large;
+    letter-spacing: 8px;
+}
+
+.banner i{
+    font-size: xx-large;
+    margin-right: 30px;
+}
+
+.banner a i{
+    color: white;
+    font-size: 5rem;
+    margin-right: 0px;
+}
+
+.banner .hvr-orange:hover{
+    color: orange;
+}
+
+section{
+    min-height: 800px;
+    padding-bottom: 20px;
+}
+
+/* Portfolio */
+#Portfolio .col{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#Portfolio p:first-child, #Projects p:first-child{
+    font-size: xx-large;
+    margin-top: 48px;
+}
+
+#Portfolio .row .row{
+    margin-top: 100px;
+}
+
+/* Pricing */
+#Pricing .col{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#Pricing .card{
+    margin: 0px;
+    height: 550px;
+}
+
+#Pricing .row .col > p:first-child{
+    font-size: xx-large;
+}
+
+#Pricing .card-body > p:first-child, #Pricing .card-header > p{
+    font-size: x-large;
+}
+
+/* Projects */
+#Projects img{
+    height: 300px;
+}
+
+
+/* Mobile view */
+@media(max-width:1200px) and (min-width:900px){
+    /* Pricing */
+    #Pricing .col{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #Pricing .card{
+        margin: 0px;
+        height: 600px;
+    }
+}
+
+@media(max-width:900px) and (min-width:600px){
+    /* Portfolio */
+    #Portfolio .col{
+        margin: 0px 15px;
+    }
+
+    #Portfolio .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #Portfolio img:last-child{
+        margin-top: 15px;
+    }
+
+    /* Pricing */
+    #Pricing .col{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #Pricing .card{
+        margin-top: 30px;
+        height: 550px;
+    }
+
+    #Pricing .col-4{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #Pricing .row .col > p:first-child{
+        font-size: x-large;
+    }
+    
+    #Pricing .card-body > p:first-child, #Pricing .card-header > p{
+        font-size: large;
+    }
+}
+
+@media(max-width:600px){
+    .contact-info{
+        margin-left: 10px;
+    }
+
+    .contact-info div{
+        display: block;
+    }
+
+    .banner{
+        min-height: 500px;
+    }
+
+    .banner p{
+        font-size: large;
+        letter-spacing: 2px;
+    }
+
+    /* Portfolio */
+    #Portfolio .col{
+        margin: 0px 15px;
+    }
+
+    #Portfolio .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #Portfolio p{
+        font-size: small;
+    }
+
+    #Portfolio p:first-child{
+        font-size: large;
+    }
+
+    #Portfolio .row .row{
+        margin-top: 50px;
+    }
+
+    #Portfolio img:last-child{
+        margin-top: 15px;
+    }
+
+
+    /* Pricing */
+    #Pricing .row .col > p:first-child{
+        font-size: x-large;
+    }
+
+    #Pricing .col{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #Pricing .card{
+        margin-top: 20px;
+        height: 550px;
+    }
+
+    #Pricing .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #Pricing .row .col > p:first-child{
+        font-size: x-large;
+    }
+    
+    #Pricing .card-body > p:first-child, #Pricing .card-header > p{
+        font-size: x-large;
+    }
+}
+
+@media(max-width:600px) and (min-width:320px){
+    .mobile-remove-1{
+        display: none;
+    }
+
+    .banner i{
+        font-size: larger;
+    }
+
+    .banner a i{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 325px){
+    .mobile-remove-1{
+        display: none;
+    }
+    .mobile-remove-2{
+        display: none;
+    }
+
+    .banner i{
+        margin-right: 20px;
+    }
+
+    .banner i{
+        font-size: large;
+    }
+
+    .banner a i{
+        font-size: 2rem;
+    }
+
+    /* Pricing */
+    #Pricing .row .col > p:first-child{
+        font-size: x-large;
+    }
+    
+    #Pricing .card-body > p:first-child, #Pricing .card-header > p{
+        font-size: large;
+    }
+
+    #Pricing .col{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+/* Test */
+/* .card{
+    height: 200px;
+} */

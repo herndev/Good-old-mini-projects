@@ -1,0 +1,22 @@
+html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    height: 800px;
+}
+
+section:first-child{
+    padding-top: 10%;
+}
+
+.banner-logo{
+    height: 100px;
+    width: 100px;
+}
+
+.banner-search-btn{
+    max-width: 50px;
+}

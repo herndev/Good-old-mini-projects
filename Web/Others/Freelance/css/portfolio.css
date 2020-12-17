@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Display */
+.display-flex{
+    display: flex;
+}
+
+.max-height{
+    height: 100%;
+}
+
+.max-width{
+    width: 100%;
+}
+
+/* Visibility */
+.visible-xs{
+    display: none;
+}
+
+/* Test spacing */
+.letter-spacing-1{
+    letter-spacing: .1rem;
+}
+
+.letter-spacing-2{
+    letter-spacing: .2rem;
+}
+
+/* Text color */
+.text-skyblue{
+    color: skyblue;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-red{
+    color: tomato;
+}
+
+.text-orange{
+    color: orange;
+}
+
+.text-oranged{
+    color: orangered;
+}
+
+.text-maroon{
+    color: rgb(209, 81, 30);
+}
+
+/* Background color */
+.bg-bronze{
+    background-color: sandybrown;
+}
+
+.bg-black{
+    background-color: #3a3430;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-light2{
+    background-color: lightgreen;
+}
+
+#about{
+    background: url('../img/background/flip-green-leafed-plant-2748756.jpg') repeat scroll center bottom / cover;
+}
+
+#skillsandtools{
+    background: url('../img/background/green-leafed-plant-2748756.jpg') repeat scroll center bottom / cover;
+}
+
+header{
+    background: url('../img/me/hot-me-bg.jpg') repeat scroll center bottom / cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header .content{
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .content h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: azure;
+    text-shadow: 5px 5px 5px #3a3430;
+}
+
+header .content i{
+    font-size: 20px;
+    /* font-weight: 700; */
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-right: 20px;
+}
+
+section{
+    min-height: 600px;
+}
+
+#about img{
+    box-shadow: 8px 8px 8px lightslategray;
+}
+
+#contact h3{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* color: whitesmoke; */
+    margin-right: 20px;
+}
+
+#contact p{
+    line-height: 2rem;
+}
+
+/* Projects */
+.project_img .project-description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.project_img:hover{
+    cursor: pointer;
+}
+
+.project_img:hover .project-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+.projects-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+}
+
+.plus{
+    /* border: 1px solid #3a3430; */
+    background-color: white;
+}
+
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maxwh{
+    width: 100%;
+    height: 600px;
+}
+
+#skillsandtools .list-inline-item i{
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.logo{
+    height: 25px;
+}
+
+/* Carousel */
+.owl-item {
+    float: left;
+  }
+  .services-block span {
+    margin: 10px 0;
+    position: relative;
+    font-size: 13px;
+    color: #292929;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+  }
+  
+  .services-block .separator {
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  
+  .services-block i {
+    font-size: 44px;
+    color: orangered;
+    line-height: 44px;
+  }
+  
+  
+  .services-carousel  .owl-stage-outer {
+    overflow: hidden;
+  }
+  
+  .services-carousel .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .services-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    border: 0;
+    padding: 0 !important;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .services-carousel .owl-dot.active {
+    background-color: #b8a07e;
+  }
+  
+  .owl-nav {
+    display: none;
+  }
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .hidden-lg{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .hidden-md{
+        display: none;
+    }
+
+    .justify-md{
+        text-align: justify;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Projects */
+    .project_img{
+        margin-bottom: 5px;
+    }
+
+    .projects-centered{
+        margin: 0px;
+    }
+
+    .visible-xs{
+        display: block;
+    }
+    
+    .hidden-xs{
+        display: none;
+    }
+
+    .left-md{
+        text-align: left;
+    }
+}
+
+@media (max-width: 320px){
+
+}
+
+
+
+
+
+
+

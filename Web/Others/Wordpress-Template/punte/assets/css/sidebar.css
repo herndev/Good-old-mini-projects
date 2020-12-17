@@ -1,0 +1,163 @@
+.sidebar-left{
+    float: left;
+}
+
+.sidebar-right{
+    float: right;
+}
+
+.left-sidebar #primary{
+    float: right;
+}
+
+.both-sidebar .site-content > .punte-container{
+    padding: 0 290px;
+}
+
+.both-sidebar #primary{
+    width: 100%;
+    float: right;
+}
+
+.both-sidebar .sidebar{
+    width: 260px;
+}
+
+.both-sidebar .sidebar-left{
+    float: left;
+    margin-left: -290px;
+}
+
+.both-sidebar .sidebar-right{
+    position: relative;
+    float: right;
+    margin-right: -290px;
+    right: -100%;
+}
+
+.both-left-sidebar .site-content > .punte-container{
+    padding-left:580px;
+}
+
+.both-left-sidebar #primary{
+    width: 100%;
+    float: right;
+}
+
+.both-left-sidebar .sidebar{
+    width: 260px;
+}
+
+.both-left-sidebar .sidebar-left{
+    float: left;
+    margin-left: -580px;
+}
+
+.both-left-sidebar .sidebar-right{
+    float: left;
+    margin-left: -290px;
+}
+
+.both-right-sidebar .site-content > .punte-container{
+    padding-right:580px;
+}
+
+.both-right-sidebar #primary{
+    width: 100%;
+    float: left;
+}
+
+.both-right-sidebar .sidebar{
+    width: 260px;
+}
+
+.both-right-sidebar .sidebar-left{
+    float: right;
+    margin-right: -290px;
+}
+
+.both-right-sidebar .sidebar-right{
+    float: right;
+    margin-right: -580px;
+}
+
+
+
+/*---Sidebar Styles---*/
+.sidebar-style1 .widget{
+    background: #F6F6F6;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.sidebar-style2 .widget-title{
+    background: #F6F6F6;
+    padding: 10px 15px;
+    border-left: 5px solid #25bcea;
+}
+
+.sidebar-style3 .widget-title{
+    border-bottom: 3px solid #F6F6F6;
+    padding-bottom: 10px;
+}
+
+.sidebar-style3 .widget-title span{
+    position: relative;
+    display: inline-block;
+}
+
+.sidebar-style3 .widget-title span:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #25bcea;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.sidebar-style4 .widget-title{
+    border-left: 4px solid #25bcea;
+    padding-left: 15px;
+    text-transform: uppercase; 
+}
+
+.sidebar-style5 .widget{
+    background: #F6F6F6;
+    padding: 20px;
+    border-top: 4px solid #25bcea;
+}
+
+.sidebar-style6 .widget-title{
+    text-transform: uppercase;
+}
+
+.sidebar .widget{
+    margin-bottom: 40px;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 0;
+}
+
+.sidebar li{
+    padding: 4px 0;
+}
+
+.sidebar ul ul{
+    margin-left: 10px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar .widget-title{
+    font-size: 1.55em;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}

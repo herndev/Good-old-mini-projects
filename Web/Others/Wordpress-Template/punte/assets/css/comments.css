@@ -1,0 +1,133 @@
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comments-area{
+    margin-bottom: 40px;
+}
+
+.comments-title{
+    margin-bottom: 40px;
+}
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.author-email-url{
+    margin-left: -2%;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url{
+    float: left;
+    margin-left: 2%;
+    width: 31.33333%;
+}
+
+.author-email-url input{
+    width: 100%;
+}
+
+.comment-form .form-submit{
+    margin-bottom: 0
+}
+
+h3#reply-title,
+h3.comments-title{
+    margin-bottom: 30px;
+}
+
+.logged-in-as,
+.comment-notes{
+    font-size: 0.9em;
+}
+
+#comments ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#comments li.comment{
+    margin: 0;
+}
+
+#comments li.comment .children{
+    display: block;
+    margin: 0 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+article.comment-body {
+    margin: 0 0 50px;
+    position: relative;
+}
+
+.comment-list a{
+    color: #404040;
+    text-decoration: none;
+}
+
+.comment-list a:hover,
+.comment-list a:focus{
+    color: #333;
+}
+
+.comment-list .comment-respond{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.comment-list .vcard img {
+    margin-right: 10px;
+}
+
+.comment-list .vcard .fn{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.comment-list .edit-link{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.comment-list .edit-link a{
+    font-size: 0.9em;
+    color: #999;
+    display: inline-block;
+}
+
+.comment-list .comment-meta {
+    margin-bottom: 15px;
+} 
+
+.comment-list .comment-metadata {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.comment-list .comment-metadata a {
+    margin-left: 10px;
+}
+
+.comment-list .comment-metadata .reply {
+    float: right;
+}
+
+#cancel-comment-reply-link {
+    float: right;
+}
+
+.no-comments{
+    color: #FFC107;
+}

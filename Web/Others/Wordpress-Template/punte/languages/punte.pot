@@ -1,0 +1,1573 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Punte\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-19 07:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#: inc/welcome/welcome.php:205
+msgid " -for tutorials, videos and more."
+msgstr ""
+
+#: inc/welcome/welcome.php:203
+msgid " -to receive updates, offers and more."
+msgstr ""
+
+#: inc/welcome/welcome.php:207
+msgid " -to stay updated. "
+msgstr ""
+
+#: inc/welcome/sections/demo_import.php:117
+msgid " Plugin"
+msgstr ""
+
+#: functions/helper-functions.php:66
+msgid "% Comments"
+msgstr ""
+
+#. 1: comment date, 2: comment time
+#: functions/helper-functions.php:316
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions/helper-functions.php:66
+msgid "0 comment"
+msgstr ""
+
+#: functions/helper-functions.php:66
+msgid "1 Comment"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:106 inc/welcome/welcome-config.php:119
+msgid "1.0.1"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:93
+msgid "1.0.3"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:145
+msgid "1.0.6"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:132
+msgid "1.3.5"
+msgstr ""
+
+#: inc/welcome/sections/support.php:15
+msgid "10AM - 5PM "
+msgstr ""
+
+#: inc/welcome/welcome-config.php:158
+msgid "2.0.2"
+msgstr ""
+
+#: inc/breadcrumbs.php:216
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:469
+msgid "404 Page Sidebar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:173
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:165
+msgid "A perfect timeline maker! If you're planning to make one go for it!"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:20
+msgid "Access Demo Importer"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:25
+msgid ""
+"Access Demo Importer adds the feature to Import the Demo Conent with a "
+"single click."
+msgstr ""
+
+#. Author of the theme
+msgid "AccessPress Themes"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:179 inc/welcome/welcome-config.php:196
+msgid "Activate"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:197
+msgid "Activated"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:126
+msgid ""
+"Add some attractive badges on your product listing and single page and "
+"increase your sales upto 55%."
+msgstr ""
+
+#: functions.php:135 functions.php:145 functions.php:155 functions.php:165
+msgid "Add Widget to show in Footer"
+msgstr ""
+
+#: functions.php:125
+msgid "Add Widget to show in Header. Works with header Layout 3 and 6 only"
+msgstr ""
+
+#: functions.php:115
+msgid "Add Widget to show in Left Sidebar"
+msgstr ""
+
+#: functions.php:105
+msgid "Add Widget to show in Right Sidebar"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:204
+msgid "All Recommended action has been successfully completed."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:987
+msgid "All Right Reserved."
+msgstr ""
+
+#: inc/welcome/welcome-config.php:203
+msgid ""
+"All these required plugins will be installed and activated while importing "
+"demo. Or you can choose to install and activate them manually. If you're not "
+"importing any of the demos, you must install and activate these plugins "
+"manually."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:855
+#: inc/modified-redux/punte-config.php:1032
+msgid "Anchor Link Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:455
+msgid "Archive Page Sidebar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:512
+msgid "Archive Title Bar Layout"
+msgstr ""
+
+#: inc/breadcrumbs.php:217
+msgid "Archives"
+msgstr ""
+
+#: inc/welcome/welcome.php:211
+msgid "Are you enjoying Punte? We would love to hear your feedback!"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:200
+msgid "Are you sure to import demo content ?"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1409
+msgid "Behance"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1126
+msgid "Blog"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1140
+msgid "Blog Content"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:427
+msgid "Blog Page Sidebar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1133
+msgid "Blog Style"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:269
+msgid "Blog Style One"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:273
+msgid "Blog Style Two"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:336
+msgid "Body background"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:238
+msgid "Both Sidebar"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:391
+msgid "Boxed"
+msgstr ""
+
+#: inc/breadcrumbs.php:214
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/breadcrumbs.php:213
+msgid "Browse:"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:835
+msgid "Build custom Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1012
+msgid "Builder custom Footer"
+msgstr ""
+
+#. 1: autnor name
+#: functions/punte-functions.php:39
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/welcome/welcome.php:38
+msgid "ChangeLog"
+msgstr ""
+
+#: inc/welcome/sections/support.php:32
+msgid ""
+"Checkout our documentation and get more details on how to setup / configure "
+"theme step by step."
+msgstr ""
+
+#: inc/welcome/welcome-config.php:80
+msgid "Collection of elementor widgets to edit the site easily."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:309
+msgid "Colors"
+msgstr ""
+
+#: comments.php:78
+msgid "Comment"
+msgstr ""
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment number, 2: comment numbers
+#: comments.php:25
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/welcome/welcome.php:124
+msgid "Contact Support"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:398
+msgid "Container Width"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:399
+msgid "Container width in px"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:410
+msgid "Content | Sidebar Ratio"
+msgstr ""
+
+#. %s: Name of current post.
+#: template-parts/content-single.php:11
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:986
+msgid "CopyRight Text"
+msgstr ""
+
+#: inc/welcome/sections/support.php:4
+msgid "Create Support Tickets"
+msgstr ""
+
+#: inc/welcome/sections/support.php:6
+msgid "Create Ticket"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:205
+msgid "Customize Theme"
+msgstr ""
+
+#: inc/breadcrumbs.php:729 inc/breadcrumbs.php:1159
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:178
+msgid "Deactivate"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:412
+msgid "Default: 70% | 30%"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1142
+msgid "Define the no of words to show if Excerpt is selected."
+msgstr ""
+
+#: inc/welcome/welcome-config.php:199
+msgid "Demo Installed"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:100
+msgid ""
+"Design your WooCommerce shop like never before! A complete package for your "
+"Woo shop designer."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1374
+msgid "Digg"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:573
+#: inc/modified-redux/punte-config.php:593
+#: inc/modified-redux/punte-config.php:601
+#: inc/modified-redux/punte-config.php:679
+#: inc/modified-redux/punte-config.php:1074
+#: inc/modified-redux/punte-config.php:1274
+msgid "Disable"
+msgstr ""
+
+#: inc/welcome/welcome.php:132 inc/welcome/sections/support.php:31
+msgid "Documentation"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1339
+msgid "Dribbble"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1416
+msgid "Dropbox"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:144
+msgid "Easy Side Tab Pro - Responsive Floating Tab Plugin For Wordpress"
+msgstr ""
+
+#: functions/helper-functions.php:304
+msgid "Edit"
+msgstr ""
+
+#. %s: Name of current post
+#: template-parts/content-page.php:34
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: comments.php:69
+msgid "Email"
+msgstr ""
+
+#: inc/welcome/sections/support.php:23
+msgid "Email to support team"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:704
+#: inc/modified-redux/punte-config.php:748
+msgid "Empty"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:572
+#: inc/modified-redux/punte-config.php:592
+#: inc/modified-redux/punte-config.php:600
+#: inc/modified-redux/punte-config.php:678
+#: inc/modified-redux/punte-config.php:1073
+#: inc/modified-redux/punte-config.php:1273
+msgid "Enable"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:520
+msgid "Enable archive Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:300
+msgid "Enable Back To Top"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:294
+msgid "Enable BreadCrumb"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1008
+msgid "Enable Custom Footer"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:831
+msgid "Enable Custom Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:502
+msgid "Enable Page Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:485
+msgid "Enable Post Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:361
+msgid "Enable Resonsive Nav from"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:355
+msgid "Enable Responsive"
+msgstr ""
+
+#: inc/welcome/welcome.php:356
+msgid "Error - unable to verify nonce, please try again."
+msgstr ""
+
+#: inc/welcome/welcome-config.php:157
+msgid "Everest Timeline - Responsive WordPress Timeline Plugin"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1152
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1296
+msgid "Facebook"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1311
+msgid "Flickr"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:151
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:870
+#: inc/modified-redux/punte-config.php:883
+msgid "Footer"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:953
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1001
+msgid "Footer Builder"
+msgstr ""
+
+#: functions.php:163
+msgid "Footer Four"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:960
+msgid "Footer Header Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:974
+msgid "Footer Link Color"
+msgstr ""
+
+#: functions.php:133
+msgid "Footer One"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:876
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1017
+msgid "Footer Template"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:967
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:943
+msgid "Footer Text Size"
+msgstr ""
+
+#: functions.php:153
+msgid "Footer Three"
+msgstr ""
+
+#: functions.php:143
+msgid "Footer Two"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:891
+msgid "Footer Widget Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:906
+msgid "Four Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1395
+#: inc/modified-redux/punte-config.php:1423
+msgid "Foursquare"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:191
+msgid "Free Plugins"
+msgstr ""
+
+#: inc/welcome/welcome.php:135
+msgid "Full Documentation"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:390
+msgid "Full Width"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:286
+#: inc/modified-redux/punte-config.php:1246
+msgid "General Settings"
+msgstr ""
+
+#: inc/welcome/welcome.php:201
+msgid "Get connected, share your opinions and more via our social community: "
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:280 inc/welcome/welcome.php:34
+msgid "Getting Started"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1430
+msgid "GitHub"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:24
+msgid "Go live with the website and get some rest"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:775
+#, php-format
+msgid ""
+"Go to <a target=\"_blank\" href=\"%s\">Menu Page</a> to create a new Menu "
+"and refresh the page"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:784
+#, php-format
+msgid ""
+"Go to <a target=\"_blank\" href=\"%s\">widget Page</a> to create a new "
+"Widget Area and refresh this page"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:187
+msgid "Go to Customizer Panels"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:528
+msgid "Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:556
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:824
+msgid "Header Builder"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:260
+msgid "Header Four"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:248
+msgid "Header One"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:534
+#: inc/modified-redux/punte-config.php:541
+msgid "Header Style"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:840
+msgid "Header Template"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:256
+msgid "Header Three"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:252
+msgid "Header Two"
+msgstr ""
+
+#: functions.php:123
+msgid "Header Widget"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:886
+#: inc/modified-redux/punte-config.php:1167
+#: inc/modified-redux/punte-config.php:1176
+#: inc/modified-redux/punte-config.php:1189
+#: inc/modified-redux/punte-config.php:1198
+#: inc/modified-redux/punte-config.php:1207
+#: inc/modified-redux/punte-config.php:1216
+#: inc/modified-redux/punte-config.php:1225
+#: inc/modified-redux/punte-config.php:1234
+#: inc/modified-redux/punte-config.php:1257
+msgid "Hide"
+msgstr ""
+
+#: inc/breadcrumbs.php:215
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumbs.php:711
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:705
+#: inc/modified-redux/punte-config.php:749
+msgid "HTML Text"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://accesspressthemes.com/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://thepunte.com"
+msgstr ""
+
+#: inc/welcome/sections/support.php:13
+msgid ""
+"If you need an immediate solution, you can try our online chat support too. "
+"However our online time is limited and as below"
+msgstr ""
+
+#: inc/welcome/sections/support.php:5
+msgid ""
+"If you're having any issues with the theme, feel free to create a ticket in "
+"our support forum. We reply your ticket very soon!"
+msgstr ""
+
+#: inc/welcome/welcome.php:37
+msgid "Import Demo"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1332
+msgid "Instagram"
+msgstr ""
+
+#: inc/welcome/sections/demo_import.php:117
+msgid "Install : "
+msgstr ""
+
+#: inc/welcome/welcome-config.php:177
+msgid "Install and Activate"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:16
+msgid "Install Demo"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:198
+msgid "Installing Demo"
+msgstr ""
+
+#: 404.php:29
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/welcome/sections/support.php:16
+msgid "Kathmandu Time (GMT + 5:45)"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1402
+msgid "LastFM"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:375
+msgid "Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:230
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:146
+msgid "Like us on Facebook"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:810
+msgid "Link Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1318
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:617
+msgid "Logo Padding"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:717
+msgid "Mail Us : info@example.com | Call Us : +977 9841012345"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:323
+msgid "Main Content Link Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:549
+msgid "Main Header"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:139
+msgid ""
+"Make your default wp-admin screen look like a non WP one! Choose from some "
+"great ready to use template designs and many features to boost your "
+"WordPress backend."
+msgstr ""
+
+#. Description of the theme
+#: inc/welcome/welcome-config.php:174
+msgid ""
+"Meet Punte powerful multipurpose WordPress theme ready to publish any "
+"websites. The theme is fully compatible with most popular page builder "
+"Elementor so you can easily showcase your ideas into website within a moment."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:706
+#: inc/modified-redux/punte-config.php:750
+msgid "Menu"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:630
+msgid "Menu - Link Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1092
+#: inc/modified-redux/punte-config.php:1099
+msgid "Menu Font"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:363
+msgid "Min: 420, Max: 1200, Default Value: 1170"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:580
+msgid "Min: 80, Max: 150, Default Value: 90"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:400
+msgid "Min: 960, Max: 1300, Default Value: 1170"
+msgstr ""
+
+#. Minute archive title. %s is the minute time format.
+#: inc/breadcrumbs.php:223
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:677
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/breadcrumbs.php:694
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/welcome/sections/support.php:14
+msgid "Mon - Fri"
+msgstr ""
+
+#: inc/breadcrumbs.php:728 inc/breadcrumbs.php:784 inc/breadcrumbs.php:1155
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:73
+msgid "Most popular front end page builder for editing sites."
+msgstr ""
+
+#: comments.php:66
+msgid "Name"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:578
+msgid "Navbar height"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:579
+msgid "Navbar height in px"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:598
+msgid "Navbar Search"
+msgstr ""
+
+#: comments.php:35
+msgid "Newer Comments"
+msgstr ""
+
+#: functions/helper-functions.php:103
+msgid "Next"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:834
+#: inc/modified-redux/punte-config.php:1011
+msgid "No"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:226
+msgid "No Sidebar"
+msgstr ""
+
+#: template-parts/content-none.php:8
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1153
+msgid "Number of words"
+msgstr ""
+
+#: comments.php:34
+msgid "Older Comments"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:15
+msgid ""
+"Once you chose one of the available starter sites (demos) - you can install "
+"it. Please be noted that once you install the demo, it will install all the "
+"required plugins too. It is not recommended to install demo on your existing "
+"content. A fresh WordPress installation would be required to install demo to "
+"replicate demo content exactly. "
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:20
+msgid ""
+"Once you install the demo, you can start editing the content, replacing "
+"images etc."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:894
+msgid "One Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:918
+msgid "One One Two Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:926
+msgid "One Three Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:910
+msgid "One Two Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:934
+msgid "One Two One Column"
+msgstr ""
+
+#: inc/welcome/sections/support.php:12
+msgid "Online Chat"
+msgstr ""
+
+#: 404.php:14
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. %s is the page number.
+#: inc/breadcrumbs.php:221
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1271
+msgid "Page Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:434
+msgid "Page Sidebar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:494
+msgid "Page Title Bar Layout"
+msgstr ""
+
+#: template-parts/content-page.php:23 template-parts/content-single.php:15
+msgid "Pages:"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1325
+msgid "Pinterest"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:152
+msgid ""
+"Place some great designed floating tabs on your site for quick links. "
+"Increase accessibility of your site."
+msgstr ""
+
+#: inc/welcome/welcome.php:437 inc/welcome/welcome.php:457
+msgid "Plugin Does not Exists"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:448
+msgid "Portfolio Post Sidebar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1163
+msgid "Post Meta"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:441
+msgid "Post Sidebar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:477
+msgid "Post Title Bar Layout"
+msgstr ""
+
+#: functions/footer-functions.php:37
+msgid "Powered By"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:190
+msgid "Premium Plugins"
+msgstr ""
+
+#: functions/helper-functions.php:99
+msgid "Prev"
+msgstr ""
+
+#: functions.php:40
+msgid "Primary"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:105
+msgid "Product Slider For WooCommerce - Woo Extension to Showcase Products"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:113
+msgid ""
+"Product Slider for WooCommerce is an advanced WooCommerce extension that "
+"lets you showcase your online products in the most appealing style."
+msgstr ""
+
+#. Name of the theme
+msgid "Punte"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:22
+msgid "Punte - Theme Option Panel"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:134
+msgid "Punte Documentation"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:7
+msgid ""
+"Punte now comes with a sites library with 10+ starter sites to pick from. "
+"You can check theme out and decide which one to start with. However you can "
+"decide not to use any one of them and start building your site from scratch."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:34
+#: inc/modified-redux/punte-config.php:35
+msgid "Punte Options"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:173
+msgid "Punte Setup"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:140
+msgid "Punte Support"
+msgstr ""
+
+#. Name of the template
+msgid "Punte Template"
+msgstr ""
+
+#: inc/punte-woo.php:202
+msgid "Quick View"
+msgstr ""
+
+#: template-parts/content-blog-style1.php:54
+#: template-parts/content-search.php:31
+msgid "Read More"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:184
+msgid "Read Now"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:183
+msgid ""
+"Read the Documentation and follow the instructions to manage the site , it "
+"helps you to set up the theme more easily and quickly. The Documentation is "
+"very easy with its pictorial  and well managed listed instructions. "
+msgstr ""
+
+#. 1: new post link
+#: template-parts/content-none.php:14
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/welcome/welcome.php:118
+msgid "ready to use starter sites."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:607
+msgid "Recommended Logo Size: 320px X 80px"
+msgstr ""
+
+#: inc/welcome/welcome.php:36
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1367
+msgid "Reddit"
+msgstr ""
+
+#: functions/helper-functions.php:138
+msgid "Related Posts"
+msgstr ""
+
+#: inc/welcome/welcome.php:35
+msgid "Required Plugins"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:348
+msgid "Responsive"
+msgstr ""
+
+#: inc/welcome/welcome.php:138
+msgid "Return to your Dashboard"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:234
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions/header-functions.php:179
+msgid "Search"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:462
+msgid "Search Page Sidebar Layout"
+msgstr ""
+
+#. %s is the search query. The HTML entities are opening and closing curly quotes.
+#: inc/breadcrumbs.php:219
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#. 1: search terms
+#: functions/header-functions.php:331
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:8
+msgid "See Demos"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1018
+msgid "Select elementor template for footer"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:841
+msgid "Select elementor template for header"
+msgstr ""
+
+#: functions/punte-functions.php:160
+msgid "Select Template"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:362
+msgid "Select the container width in px from where the responsive nav appear."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:739
+#: inc/modified-redux/punte-config.php:783
+msgid "Select the Widget"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1173
+#: inc/modified-redux/punte-config.php:1195
+msgid "Share button at the bottom of the post"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1172
+msgid "Share Buttons"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1253
+msgid "Shopping Bag Icon / Cart"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:885
+#: inc/modified-redux/punte-config.php:1166
+#: inc/modified-redux/punte-config.php:1175
+#: inc/modified-redux/punte-config.php:1188
+#: inc/modified-redux/punte-config.php:1197
+#: inc/modified-redux/punte-config.php:1206
+#: inc/modified-redux/punte-config.php:1215
+#: inc/modified-redux/punte-config.php:1224
+#: inc/modified-redux/punte-config.php:1233
+#: inc/modified-redux/punte-config.php:1256
+msgid "Show"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1204
+msgid "Show Author Box"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1164
+#: inc/modified-redux/punte-config.php:1186
+msgid "Show Author, Date & Categories"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1231
+msgid "Show Comments"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1145
+msgid "Show Excerpt"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1144
+msgid "Show Full Content"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1213
+msgid "Show Prev/Next Post"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1222
+msgid "Show Related Box"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1254
+msgid "Show shopping bag icon and cart in main navigation"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1288
+msgid "Show Social Links"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1047
+msgid "Sidebar"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:420
+msgid "Sidebar Layout"
+msgstr ""
+
+#: functions.php:113
+msgid "Sidebar Left"
+msgstr ""
+
+#: functions.php:103
+msgid "Sidebar Right"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1054
+msgid "Sidebar Style"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1057
+msgid "Sidebar Style One"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1061
+msgid "Sidebar Style Two"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1203
+msgid "Single Post - Author Box"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1230
+msgid "Single Post - Comments"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1185
+msgid "Single Post - Meta"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1212
+msgid "Single Post - Pagination"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1221
+msgid "Single Post - Related Posts"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1194
+msgid "Single Post - Share Buttons"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to the content"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1437
+msgid "Skype"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1281
+msgid "Social Links"
+msgstr ""
+
+#: template-parts/content-none.php:18
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/welcome/welcome.php:347
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1388
+msgid "SoundCloud"
+msgstr ""
+
+#: inc/welcome/sections/support.php:17
+msgid "Start Online Chat"
+msgstr ""
+
+#: inc/welcome/welcome.php:112
+msgid "Starter site demos!"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:6
+msgid "Step 1 - Checkout starter sites (Demos) "
+msgstr ""
+
+#: inc/welcome/welcome-config.php:182
+msgid "Step 1 - Documentation"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:185
+msgid "Step 2 - Customizer Panel"
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:14
+msgid "Step 2 - Import demo of your choice "
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:19
+msgid "Step 3 - Start editing the demo content and making your site! "
+msgstr ""
+
+#: inc/welcome/sections/getting_started.php:23
+msgid "Step 4 - You 're done! "
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:590
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1071
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1381
+msgid "StumbleUpon"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:654
+msgid "SubMenu - Background Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:642
+msgid "SubMenu - Link Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:157
+msgid "Subscribe Us on YouTube"
+msgstr ""
+
+#: inc/welcome/welcome.php:39
+msgid "Support"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:803
+#: inc/modified-redux/punte-config.php:848
+#: inc/modified-redux/punte-config.php:1025
+msgid "Text Color"
+msgstr ""
+
+#: inc/welcome/welcome.php:105
+msgid ""
+"Thank you for installing Punte. It is now installed and ready to use. Here "
+"are some useful links to get started: "
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:316
+msgid "Theme Skin"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:66
+msgid "This plugin adds theme settings to separate menu."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:515
+msgid ""
+"This Settings will apply globally on all archive pages. It includes category,"
+" tag, date, author, search, taxonomy pages"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:497
+msgid ""
+"This Settings will apply globally on all the pages. These setting can "
+"additionally be changed in the respective pages"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:480
+msgid ""
+"This Settings will apply globally on all the posts. These setting can "
+"additionally be changed in the respective posts"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:902
+msgid "Three Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:930
+msgid "Three One Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1264
+msgid "Title Bar Layout"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:669
+#: inc/modified-redux/punte-config.php:676
+msgid "Top Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:789
+msgid "Top Header Background Color"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:690
+msgid "Top Header Padding"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:732
+msgid "Top Left Header Menu"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:702
+msgid "Top Left Header Options"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:715
+msgid "Top Left Header Text"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:746
+msgid "Top Right Header Options"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:759
+msgid "Top Right Header Text"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:774
+msgid "Top Right Menu"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:691
+msgid "Top, Bottom Padding"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:618
+msgid "Top, Right, Bottom, Left Padding"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:570
+msgid "Transparent Header"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1346
+msgid "Tumblr"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1303
+msgid "Twitter"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:898
+msgid "Two Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:914
+msgid "Two One Column"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:922
+msgid "Two One One Column"
+msgstr ""
+
+#: functions/header-functions.php:178
+msgid "Type and hit Enter"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1083
+msgid "Typography"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:606
+msgid "Upload Logo"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:186
+msgid ""
+"Using the Punte customizer panel you can easily customize every aspect of "
+"the theme."
+msgstr ""
+
+#: inc/welcome/sections/actions_required.php:61
+#: inc/welcome/sections/recommended_plugins.php:44
+#: inc/welcome/sections/recommended_plugins.php:150
+msgid "Version "
+msgstr ""
+
+#: inc/welcome/sections/recommended_plugins.php:81
+msgid "View Detail"
+msgstr ""
+
+#: inc/welcome/sections/support.php:33
+msgid "View Documentation"
+msgstr ""
+
+#: inc/punte-woo.php:233
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1360
+msgid "Vimeo"
+msgstr ""
+
+#: comments.php:72
+msgid "Website"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:381
+#: inc/modified-redux/punte-config.php:388
+msgid "Website Layout"
+msgstr ""
+
+#. Weekly archive title. %s is the week date format.
+#: inc/breadcrumbs.php:225
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:757
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/welcome/welcome.php:165
+#, php-format
+msgid "Welcome to %s - Version %s"
+msgstr ""
+
+#: inc/welcome/welcome.php:104
+msgid "Welcome!"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:707
+#: inc/modified-redux/punte-config.php:751
+msgid "Widget"
+msgstr ""
+
+#: inc/punte-woo.php:165 inc/punte-woo.php:168
+msgid "Wishlist"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:118
+msgid ""
+"Woo Badge Designer - WooCommerce Product Badge Designer WordPress Plugin"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:92
+msgid ""
+"WOO Product Grid/List Design- Responsive Products Showcase Extension for "
+"Woocommerce"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1240
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/welcome/welcome-config.php:131
+msgid ""
+"WP Admin White Label Login - WordPress Plugin For Advanced Customizable "
+"Login page"
+msgstr ""
+
+#: inc/breadcrumbs.php:727 inc/breadcrumbs.php:756 inc/breadcrumbs.php:783
+#: inc/breadcrumbs.php:810 inc/breadcrumbs.php:1151
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:833
+#: inc/modified-redux/punte-config.php:1010
+msgid "Yes"
+msgstr ""
+
+#: inc/welcome/sections/support.php:24
+msgid ""
+"You can also email to our support team directly at : "
+"support@accesspressthemes.com."
+msgstr ""
+
+#: inc/welcome/welcome.php:123
+msgid ""
+"You can also reach-out to us for any support during the theme setup and use."
+msgstr ""
+
+#: functions/helper-functions.php:302
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/modified-redux/punte-config.php:1353
+msgid "Youtube"
+msgstr ""

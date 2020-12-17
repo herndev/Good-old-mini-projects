@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %}
+	NoteBlock
+{% endblock title %}
+
+<!-- Content -->
+{% block content %}
+	<section class="bg-dark text-center">
+		<img src="#" class="banner-logo mb-5">
+		{% csrf_token %}
+		<form action="/userlink" method="post" class="form-group form-inline col-4 offset-4">
+			<input type="text" name="username" placeholder="Username" class="form-control btn-lg col">
+			<button type="submit" class="btn btn-primary btn-lg ion-search col banner-search-btn">Search</button>
+		</form>
+	</section>
+
+	<section>
+
+	</section>
+{% endblock %}

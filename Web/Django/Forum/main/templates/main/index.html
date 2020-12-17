@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for contents, title, keyword, posted_at, state, type_id, poster_id, post_id in allpost %}
+    {% if type_id == 1 %}
+        <div class="hvr-float mt-3 mb-3 col ml-0 mr-0 pl-0 pr-0">
+            <div class="card animated fadeInDown">
+                <div class="card-body">
+                    <span class="float-right small">
+                        {{ posted_at.date }}
+                    </span>
+                    {% for i in users %}
+                        {% if i.id == poster_id %}
+                            <h6 class="font-italic">@{{ i.code_name}}</h6>
+                        {% endif %}
+                    {% endfor %}
+                    <div class="row post-content">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h6 class="font-weight-bold">{{ title }}</h6>
+                            <hr>
+                            <span class="text-justify">
+                                {% for line in contents %}
+                                    {{ line }}<br>
+                                {% endfor %}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mt-2">
+                        <a href="/forum/readpost/{{ post_id}}">View post</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span>
+                        {% if user.code_name %}
+                            <a href="#" class="ion-thumbsup mr-5 active_vote"><sup> 3</sup></a>
+                            <a href="#" class="ion-thumbsdown"><sup> 10</sup></a>
+                        {% else %}
+                            <span class="ion-thumbsup mr-5" disabled><sup> 3</sup></span>
+                            <span class="ion-thumbsdown" disabled><sup> 10</sup></span>
+                        {% endif %}
+                    </span>
+                    {% if user.code_name %}
+                        {% for i in users %}
+                            {% if i.id == poster_id %}
+                                {% if i.code_name == user.code_name %}
+                                    <a href="/forum/delpostrequest/0/{{ post_id }}/" class="ion-trash-a float-right"></a>
+                                {% else %}
+                                    <a href="#" class="ion-bug float-right"></a>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>  
+        </div>
+    {% endif %}
+{% endfor %}
+{% endblock content %}

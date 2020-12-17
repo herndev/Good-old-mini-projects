@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<div class='black-background' id='black-background'></div>
+	<div class='dlgbox bg-light' id='dlgbox'>
+		<div class='dlgbox-header'>Randchat</div><hr>
+		<form action="proceed/" class="form-group" method="POST">
+			<div class='dlgbox-content'>
+				<div class="row">
+					<div class="col">
+						<select class="form-control" name="gender">
+							<option value="">Select gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col">
+						<input type="text" name="username" class="form-control" placeholder="Username">
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-6">
+						<button class='btn btn-danger form-control' type="reset" onclick='ok()'>Cancel</button>
+					</div>
+					<div class="col-6">
+						<button class='btn btn-success form-control' type="submit" onclick='comfirmed_logout()'>Confirm</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="row mt-5 pt-5">
+		<div class="col-6">
+			<img src="{% static 'img/guy_phone.png' %}" alt="Mobile user" class="col m-0 p-0">
+		</div>
+		<div class="col-6 text-left">
+			<p class="mt-5">
+				<h1 class="text-secondary font-weight-bold mb-3">Welcome to Randchat</h1>
+				<span class="text-dark">Wanna waste your time by chatting to stangers without any traces? <br>
+					You just jumped in to the right site !!</span>
+			</p>
+			<button class="btn btn-primary btn-lg font-weight-bold mt-3" onclick="chatnow()">Chat now</button>
+		</div>
+	</div>
+{% endblock %}

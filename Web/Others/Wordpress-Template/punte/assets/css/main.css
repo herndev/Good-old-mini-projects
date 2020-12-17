@@ -1,0 +1,134 @@
+/*============VCROW BOX===============*/
+/*remove the spacing in the outer row*/
+.oval-button{
+    border: 1px solid #333;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 100px;
+    padding: 10px 30px;
+    line-height: 1;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.wpb_button, .wpb_content_element, 
+ul.wpb_thumbnails-fluid>li{
+    margin-bottom: 0;
+}
+
+.vc_col-has-fill>.vc_column-inner, 
+.vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner{
+    padding-top: 0;
+}
+
+
+.punte-section-outer.vc_row{
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+}
+
+.punte-row {
+    position: relative;
+    flex-grow: 1;
+}
+
+.punte-section-outer[data-vc-stretch-content] > .punte-row{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+
+.vc_column_container > .theiaStickySidebar{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.punte-top-section-seperator{
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 50px;
+    z-index: 2;
+    margin-top: -1px;
+}
+
+.punte-bottom-section-seperator{
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 50px;
+    z-index: 2;
+    margin-bottom: -1px;
+}
+
+.punte-row-overlay{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.punte-traingle-top-svg,
+.punte-bottom-section-seperator .punte-svg-triangle,
+.punte-bottom-section-seperator .punte-svg-big-triangle,
+.punte-bottom-section-seperator .punte-svg-circle,
+.punte-top-section-seperator .punte-svg-curve-center,
+.punte-top-section-seperator .punte-svg-big-triangle-right,
+.punte-top-section-seperator .punte-svg-curve-right,
+.punte-top-section-seperator .punte-svg-tilt-left,
+.punte-top-section-seperator .punte-svg-cloud,
+.punte-top-section-seperator .punte-svg-waves{
+    transform: scale(-1);
+}
+
+.punte-top-section-seperator .punte-svg-big-triangle-left,
+.punte-top-section-seperator .punte-svg-curve-left,
+.punte-svg-tilt-right{
+    transform: scaleY(-1);
+}
+
+.punte-svg-big-triangle-right,
+.punte-svg-curve-right,
+.punte-bottom-section-seperator .punte-svg-tilt-right{
+    transform: scaleX(-1);
+}
+
+.punte-round-split-left{
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 70px;
+    background: inherit;
+    position: absolute;
+}
+
+.punte-round-split-right{
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 70px;
+    background: inherit;
+    position: absolute;
+}
+
+.punte-bottom-section-seperator .punte-round-split-left,
+.punte-bottom-section-seperator .punte-round-split-right{
+    bottom: 0;
+    top: auto;
+}
+
+svg{
+    vertical-align: middle;
+}

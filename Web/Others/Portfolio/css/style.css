@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+    width: 100%;
+}
+
+/* Text color */
+.text-skyblue{
+    color: skyblue;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-red{
+    color: tomato;
+}
+
+.text-orange{
+    color: orange;
+}
+
+.text-oranged{
+    color: orangered;
+}
+
+/* Background color */
+.bg-bronze{
+    background-color: sandybrown;
+}
+
+/* Other stuffs */
+.banner-icon{
+    height: 70px;
+    width: 70px;
+}
+
+.home{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../img/me.png");
+    background-size: cover;
+    /* background-position: center; */
+    /* background-image: url("../img/me.png"); */
+    background-repeat: no-repeat;
+    height: 750px;
+    padding: 0px;
+}
+
+.offers{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../img/campaign.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+    padding: 0px;
+}
+
+header p{
+    display: inline;
+}
+
+header i{
+    font-size: 3rem;
+}
+
+.nav{
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.banner-header{
+    letter-spacing: 5px;
+}
+
+section{
+    min-height: 650px;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav a:hover{
+    border-radius: 25%;
+    border-bottom: 2px solid orangered;
+}
+
+.nav .active{
+    color: orange;
+}
+
+.nav .active:hover{
+    color: orange;
+    border-bottom: 0px;
+}
+
+section:nth-child(even){
+    background-color: gray;
+}
+
+#sec-1 h2{
+    /* display: inline-block; */
+    padding-top: 20%;
+    /* padding: 0px auto; */
+}
+
+#sec-1 img{
+    height: 250px;
+    width: 200px;
+    box-shadow: +10px 8px 8px gray;
+}
+
+/* #sec-2 h2{
+    padding-top: 8%;
+} */
+
+#sec-2 i{
+    font-size: 4rem;
+}
+
+#sec-3 h2{
+    padding-top: 8%;
+}
+
+#sec-3 .col-4:nth-child(odd){
+    background-color: whitesmoke;
+    height: 400px;
+}
+
+.vertical-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon-project{
+    font-size: 5rem;
+    color: gray;
+}
+
+.card-offer{
+    width: 300px;
+    min-height: 450px;
+    box-shadow: 8px 8px 8px gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.card-offer .card-header{
+    color: white;
+}
+
+.card-offer .card-footer{
+    background-color: #28a745;
+    color: white;
+}
+
+.table-offer tr{
+    border: 2px solid thistle;
+}
+
+.table-offer th{
+    padding: 20px;
+    color: white;
+}
+
+.table-offer td{
+    padding: 8px;
+    color: wheat;
+}
+
+.table-offer td:first-child{
+    border: 2px solid thistle;
+    padding-left: 20px;
+}
+
+.table-offer .mark{
+    text-align: center;
+    background: transparent;
+}
+

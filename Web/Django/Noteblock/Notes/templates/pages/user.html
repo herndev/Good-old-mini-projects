@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<!-- Title -->
+{% block title %}
+	{{ username }}
+{% endblock title %}
+
+<!-- Content -->
+{% block content %}
+	<h3>Welome, {{ username }}</h3>
+	<form action="/notes/{{ username }}" class="form-group form-inline" method="POST" hidden>
+		<input type="text" name="search_input" id="search_input" class="form-control" placeholder="Title..">
+		<input type="submit" value="Search" class="btn btn-primary">
+	</form>
+	<a href="#">New note</a><br>
+	<a href="#">Save</a>
+
+	<form action="/notes/{{ username }}" method="post" class="form-group">
+		<input type="text" name="new_title" id="new_title" placeholder="Title" class="form-control"><br>
+		<textarea name="new_note" id="new_note" cols="30" rows="10" placeholder="Note.."></textarea><br>
+		<input type="submit" value="Create" class="btn btn-primary">
+	</form>
+
+	{% if status == 'new' %}
+		<h4>Empty set</h4>
+	{% else %}
+		{% if user_notes %}
+			{% for note in user_notes %}
+				<h5>{{ note.title }}</h5>
+				<a href="/delnote/{{ note.id }}">Delete note</a>
+				<p>{{ note.text }}</p>
+			{% endfor %}
+		{% else %}
+			<h4>No notes for now</h4>
+		{% endif %}
+	{% endif %}
+{% endblock %}

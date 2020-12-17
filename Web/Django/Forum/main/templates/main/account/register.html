@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row mt-5 mb-5">
+        <div class="col-10 offset-1 form-register">
+            <!-- {% csrf_token %} -->
+            <form action="{{ register_url }}" class="form-group" method="POST">
+                <h4>Create New Account</h4>
+                <input type="text" name="code_name" class="form-control mt-2" maxlength=50 placeholder="Code name" required>
+                <input type="email" name="email" class="form-control mt-2" placeholder="Email" required>
+                <input type="text" name="f_name" class="form-control mt-2" maxlength=50 placeholder="First name" required>
+                <input type="text" name="l_name" class="form-control mt-2" maxlength=50 placeholder="Last name" required>
+                <input type="password" name="password" minlength=8 maxlength=50 class="form-control mt-2" placeholder="Password" required>
+                <input type="password" name="re_password" minlength=8 maxlength=50 class="form-control mt-2" placeholder="Re-type password" required>
+                <button class="btn btn-primary btn-block btn-lg mt-3" type="submit">Register</button>
+            </form>
+            <p class="mt-4">Alraeady have an account? <span><a href="{% url 'login_url' %}">SignIn</a></span></p>
+            {% if errormsg %}
+                <div class="card bg-danger">
+                    <h5 class="ml-2 p-0 m-0 font-weight-bold">Error:</h5>
+                    {% for i in errormsg %}
+                        <span class="ml-4 p-0 m-0 font-italic">* {{ i }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}

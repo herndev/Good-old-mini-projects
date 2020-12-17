@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body{
+    color: white;
+}
+.content{
+    color: black;
+}
+.navbar-nav{
+    display: inline;
+}
+#search_input{
+    min-width: 93%;
+}
+.post-content{
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.card-footer a, .bug, .card-footer span{
+    color: gray;
+}
+
+.card-footer .active_vote{
+    color: royalblue;
+}
+
+.card:first-child{
+    margin-top: 0px;
+}
+
+.menuboxes{
+    color: black;
+}
+
+.admin_page_table{
+    height: 100px;
+}
+
+.admin_page_table table{
+    border: 1px sodlid black;
+    border-collapse: collapse;
+}
+
+#admin_user{
+    height: 400px;
+    overflow: scroll;
+}
+
+.dynamic-reply1{
+    display: none;
+}
+
+.text-small{
+    font-size: 0.2em;
+}
+
+.bg-gray{
+    background-color: #6c757d;
+}
+
+.fg-white{
+    color: white;
+}
+
+.form-register{
+    max-width: 90%;
+}
+
+.form-login{
+    max-width: 70%;
+}

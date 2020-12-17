@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Dev</title>
+
+    <!-- CSS STYLINGS -->
+    <link rel="stylesheet" href="{% static 'mini_lib/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/hover.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/ionicons.css' %}">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .masthead{
+            padding-top: 7rem;
+            padding-bottom: calc(11rem - 72px);
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.5)), to(rgba(92, 77, 66, 0.5))), url("{% static 'mini_lib/img/bg-showcase-2.jpg' %}");
+            background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(92, 77, 66, 0.5) 100%), url("{% static 'mini_lib/img/bg-showcase-2.jpg' %}");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .navbar-scrolled{
+            background-color: white;
+        }
+
+        #mainNav {
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        -webkit-transition: background-color 0.2s ease;
+        transition: background-color 0.2s ease;
+        }
+
+        #mainNav .navbar-brand {
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 700;
+        color: #212529;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link {
+        color: #6c757d;
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 0.75rem 0;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+        color: #f4623a;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link.active {
+        color: #f4623a !important;
+        }
+
+        @media (min-width: 992px) {
+            #mainNav {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background-color: transparent;
+            }
+            #mainNav .navbar-brand {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            #mainNav .navbar-brand:hover {
+                color: #fff;
+            }
+            #mainNav .navbar-nav .nav-item .nav-link {
+                color: rgba(255, 255, 255, 0.7);
+                padding: 0 1rem;
+            }
+            #mainNav .navbar-nav .nav-item .nav-link:hover {
+                color: #fff;
+            }
+            #mainNav .navbar-nav .nav-item:last-child .nav-link {
+                padding-right: 0;
+            }
+            #mainNav.navbar-scrolled {
+                -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                background-color: #fff;
+            }
+            #mainNav.navbar-scrolled .navbar-brand {
+                color: #212529;
+            }
+            #mainNav.navbar-scrolled .navbar-brand:hover {
+                color: #f4623a;
+            }
+            #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+                color: #212529;
+            }
+            #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+                color: #f4623a;
+            }
+        }
+
+        section, header{
+            min-height: 650px;
+        }
+        footer{
+            height: 100px;
+        }
+        .page-section{
+            padding-top: 100px;
+        }
+        .bg-orange{
+            background-color: orange;
+        }
+        .text-orange{
+            color: orange;
+        }
+        .social-icons .icon, .dev-icons .icon{
+            font-size: 3em;
+            margin: 0px 15px;
+        }
+
+        .social-icons a{
+            text-decoration: none;
+        }
+
+        .text-skyblue{
+          color: skyblue;
+        }
+        .bg-red{
+          background-color: #dc3545;
+        }
+
+        .bg-tomato{
+          background-color: #f4623a;
+        }
+
+        .portfolio-box-caption{
+          background-color: #f4623a;
+          color: white;
+          display: none;
+          top: 0;
+          width: 100%;
+          height: 205px;
+          text-align: center;
+          padding-top: 70px;
+        }
+        
+        .portfolio-box:hover .img-fluid{
+          display: none;
+        }
+
+        .portfolio-box:hover .portfolio-box-caption{
+          display: block;
+        }
+
+        .element-center{
+          align-items: center;
+        }
+
+    </style>
+    <!-- JAVASCRIPTS -->
+    <script src="{% static 'mini_lib/js/jquery.min.js' %}"></script>
+    <script src="{% static 'mini_lib/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'mini_lib/js/jquery.easing.min.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger font-weight-bold" href="#page-top">{{ app_name }}</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarResponsive" style>
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <img src="{% static 'mini_lib/img/favicon.png' %}" height="200px" width="200px" class="rounded-circle">
+                <h3 class="mt-3 font-weight-bold">Hi, I'm Hernie</h3>
+                <hr class="divider light my-4">
+                <p class="text-white-50 mb-4">
+                  Looking for a Junior Web Developer to work with your projects at lowest price? you just jumped in to the right site, scroll down below and see more interesing features and skills of your future Junior Developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+  <section class="page-section text-center" id="about">
+    <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="font-weight-bold">HERNIE <span class="bg-tomato text-white btn btn-lg">JABIEN</span></h2>
+              <hr class="divider light my-4">
+              <p class="text-white-50 mb-4">I am a Junior Web Developer with an average experience and has a background of data analysis and computer programming for almost 5 years 10% from school and 90% from self studying.</p>
+              <p class="text-white-50 mb-4 mt-5">I am looking forward to work with you.</p>
+              <p class="text-white-50 mb-4 mt-5">JOSE RIVERA STREET · BRGY 27 CAGAYAN DE ORO, PHILIPPINES · (+63) 9264760564 · herniejabien45@gmail.com</p>
+              <div class="social-icons">
+                  <a href="#">
+                    <i class="ion-social-linkedin icon"></i>
+                  </a>
+                  <a href="#">
+                    <i class="ion-social-github icon text-dark"></i>
+                  </a>
+                  <a href="#">
+                    <i class="ion-social-twitter icon text-skyblue"></i>
+                  </a>
+                  <a href="#">
+                    <i class="ion-social-facebook icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section bg-dark" id="skills">
+          <div class="container text-white">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <h2 class="font-weight-bold">SKILLS</h2>
+            <h5>PROGRAMMING LANGUAGES & TOOLS</h5>
+            <hr class="divider light my-4">
+            <ul class="list-inline dev-icons mt-5">
+              <li class="list-inline-item">
+                <i class="ion-social-python icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-social-html5 icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-social-css3 icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-social-javascript icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-social-wordpress icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-social-nodejs icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-code icon"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="ion-coffee icon"></i>
+              </li>
+            </ul>
+            <p class="text-white-50 mb-4">
+              Django framework is the one I used in Web Development using Python programming language apart from that I also use python in Android App Development with Kivy environment.
+              I am flexible, adaptive and has willingness to accept recomendations and learn other programming stuffs that would lead for better output of your desired project.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="page-section" id="portfolio">
+          <div class="container p-0">
+            <h3 class="font-weight-bold ml-2">SAMPLE PROJECTS</h3>
+            <div class="row no-gutters">
+              <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'mini_lib/img/portfolio/fullsize/1.jpg' %}">
+                  <img class="img-fluid" src="{% static 'mini_lib/img/portfolio/thumbnails/1.jpg' %}" alt="">
+                  <div class="portfolio-box-caption animated fadeIn animated fadeIn">
+                    <div class="project-category text-white-50">
+                      Category
+                    </div>
+                    <div class="project-name">
+                      Project Name
+                    </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'mini_lib/img/portfolio/fullsize/2.jpg' %}">
+              <img class="img-fluid" src="{% static 'mini_lib/img/portfolio/thumbnails/2.jpg' %}" alt="">
+              <div class="portfolio-box-caption animated fadeIn">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'mini_lib/img/portfolio/fullsize/3.jpg' %}">
+              <img class="img-fluid" src="{% static 'mini_lib/img/portfolio/thumbnails/3.jpg' %}" alt="">
+              <div class="portfolio-box-caption animated fadeIn">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'mini_lib/img/portfolio/fullsize/4.jpg' %}">
+              <img class="img-fluid" src="{% static 'mini_lib/img/portfolio/thumbnails/4.jpg' %}" alt="">
+              <div class="portfolio-box-caption animated fadeIn">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'mini_lib/img/portfolio/fullsize/5.jpg' %}">
+              <img class="img-fluid" src="{% static 'mini_lib/img/portfolio/thumbnails/5.jpg' %}" alt="">
+              <div class="portfolio-box-caption animated fadeIn">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="{% static 'mini_lib/img/portfolio/fullsize/6.jpg' %}">
+              <img class="img-fluid" src="{% static 'mini_lib/img/portfolio/thumbnails/6.jpg' %}" alt="">
+              <div class="portfolio-box-caption animated fadeIn">
+                <div class="project-category text-white-50">
+                  Category
+                </div>
+                <div class="project-name">
+                  Project Name
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col form-inline">
+                <a href="http://" class="btn card m-3 mx-auto">
+                  See more
+                </a>
+              </div>
+            </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <h4 class="float-right text-white pr-3 pt-2 text-right font-weight-bold">
+        /-/v/
+        </h4>
+      <p class="text-white pt-2 pl-3 small">Copyright 2020 @ Hernie Jabien all rights reserved.</p>
+    </footer>
+    <script>
+        (function($) {
+            "use strict"; // Start of use strict
+
+            // Smooth scrolling using jQuery easing
+            $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                    scrollTop: (target.offset().top - 72)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+                }
+            });
+
+            // Closes responsive menu when a scroll trigger link is clicked
+            $('.js-scroll-trigger').click(function() {
+                $('.navbar-collapse').collapse('hide');
+            });
+
+            // Activate scrollspy to add active class to navbar items on scroll
+            $('body').scrollspy({
+                target: '#mainNav',
+                offset: 75
+            });
+
+            // Collapse Navbar
+            var navbarCollapse = function() {
+                if ($("#mainNav").offset().top > 100) {
+                $("#mainNav").addClass("navbar-scrolled");
+                } else {
+                $("#mainNav").removeClass("navbar-scrolled");
+                }
+            };
+            // Collapse now if page is not at top
+            navbarCollapse();
+            // Collapse the navbar when page is scrolled
+            $(window).scroll(navbarCollapse);
+
+            })(jQuery); // End of use strict
+
+    </script>
+</body>
+</html>

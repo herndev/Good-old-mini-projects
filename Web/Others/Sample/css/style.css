@@ -1,0 +1,15 @@
+.green{
+	color:green;
+}
+
+.pink{
+	color:pink;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+body{
+	width: 100vh;
+}

@@ -1,0 +1,200 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.admin-table, .admin-table tr, .admin-table td, .admin-table th{
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-radius: 30px;
+	padding: 0px 5px;
+}
+
+.admin-updates{
+	height: 600px;
+}
+
+.admin-log{
+	height: 200px;
+}
+
+.admin-scroll{
+	overflow-y: auto;
+}
+
+.home-chill{
+	height: 400px;
+}
+
+.page-state-container{
+	margin: 0px auto;
+}
+
+.page-state{
+	border-radius: 50%;
+	border: 1px solid;
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.page-state-true{
+	background-color: chartreuse;
+	color: chartreuse;
+}
+.page-state-false{
+	background-color: gray;
+	color: gray;
+}
+
+/* Colors */
+.Green{
+	background-color: #28a745;
+	color: white;
+}
+.Blue{
+	background-color: royalblue;
+	color: white;
+}
+.Orange{
+	background-color: #fd7e14;
+	color: white;
+}
+.Violet{
+	background-color: #6f42c1;
+	color: white;
+}
+.Gray{
+	background-color: #6c757d;
+	color: white;
+}
+.Red{
+	background-color: tomato;
+	color: white;
+}
+.Yellow{
+	background-color: gold;
+	color: white;
+}
+.Yellow-green{
+	background-color: yellowgreen;
+	color: white;
+}
+.Teal{
+	background-color: teal;
+	color: white;
+}
+.Darkgoldenrod{
+	background-color: darkgoldenrod;
+	color: white;
+}
+
+/* Other stuffs */
+.fly-right{
+	box-shadow: -10px 10px 8px slategray;
+}
+
+.fly-right-black{
+	box-shadow: -8px 8px 8px black;
+}
+
+.fly-left{
+	box-shadow: +10px 10px 4px slategray;
+}
+
+.fly-left-black{
+	box-shadow: +8px 8px 8px black;
+}
+
+.stick-bottom{
+	bottom: 0;
+}
+
+.full-height{
+	height: 100vh;
+}
+
+.full-width{
+	width: auto;
+}
+
+.voting-page{
+	min-height: 100vh;
+	background-image: url("../img/school.JPG");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.center{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.bottom{
+	margin-top: 200px;
+}
+
+
+/* Home banner */
+.home-banner{
+	height: 150px;
+	width: 300px;
+}
+
+.end-page{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-image: url("../img/bg-casual.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.curved{
+	/* border: 1px solid; */
+	/* border-radius: 8px; */
+	overflow: hidden;
+}
+
+.large{
+	font-size: 5rem;
+}
+
+.dynamic-tr:hover{
+	color: black;
+	background-color: orange;
+}
+
+.admin-table-data .dynamic-tr{
+	border: 1px solid;
+}
+
+.admin-table-data tr:last-child{
+	border: 0px;
+}
+
+.bg-gray{
+	background-color: grey;
+}
+
+.text-White{
+	color: white;
+}
+
+.top button{
+	margin-right: 3px;
+}

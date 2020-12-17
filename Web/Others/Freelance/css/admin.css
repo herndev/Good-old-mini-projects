@@ -1,0 +1,13 @@
+#projects tr{
+    border: 1px solid;
+}
+
+#projects td{
+    padding: 0px 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#projects th{
+    text-align: center;
+}

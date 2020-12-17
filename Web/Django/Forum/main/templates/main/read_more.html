@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="/" class="btn btn-warning mt-2 ion-backspace-outline"> Go Back</a>
+    <div class="mt-3 mb-3">
+        <div class="card animated fadeInLeft ">
+            <div class="card-body">
+                <span class="float-right small">
+                    {{ posted_at.date }}
+                </span>
+                {% for i in users %}
+                    {% if i.id == poster_id %}
+                        <h6 class="font-italic">@{{ i.code_name}}</h6>
+                    {% endif %}
+                {% endfor %}
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-justify">
+                        <h5 class="font-weight-bold">{{ title }}</h5>
+                        <hr>
+                        <span class="text-justify">
+                            {% for line in contents %}
+                                {{ line }}<br>
+                            {% endfor %}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>
+                    {% if user.code_name %}
+                        <a href="#" class="ion-thumbsup mr-5 active_vote"><sup> 3</sup></a>
+                        <a href="#" class="ion-thumbsdown"><sup> 10</sup></a>
+                    {% else %}
+                        <span class="ion-thumbsup mr-5" disabled><sup> 3</sup></span>
+                        <span class="ion-thumbsdown" disabled><sup> 10</sup></span>
+                    {% endif %}
+                </span>
+                {% if user.code_name %}
+                    {% for i in users %}
+                        {% if i.id == poster_id %}
+                            {% if i.code_name == user.code_name %}
+                                <a href="/forum/delpostrequest/0/{{ post_id }}/" class="ion-trash-a float-right"></a>
+                            {% else %}
+                                <a href="#" class="ion-bug float-right"></a>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+            {% if user.code_name %}
+                <div class="row mt-3">
+                    <div class="col">
+                        <form action="/forum/comment/{{ post_id }}/{{ user.id }}/" class="form-group col-12 animated fadeIn" method="POST">
+                            <textarea name="get_comment" rows="3" class="col"></textarea>
+                            <button class="btn btn-dark btn-block" type="submit">Comment</button>
+                        </form>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <h6 class="card mt-5 text-center bg-gray fg-white small">- - - - - - - - - - Comments - - - - - - - - - -</h6>
+
+        
+
+        {% for contents1, title1, keyword1, posted_at1, state1, type_id1, poster_id1, post_id1, sub in replies %}
+            <div class="card animated fadeInDown mt-3">
+                <div class="card-body">
+                    <span class="float-right small">
+                        {{ posted_at1.date }}
+                    </span>
+                    {% for i in users %}
+                        {% if i.id == poster_id1 %}
+                            <h6 class="font-italic">@{{ i.code_name}}</h6>
+                        {% endif %}
+                    {% endfor %}
+                    <div class="row post-content">
+                        <div class="col-lg-10 offset-lg-1 text-justify">
+                            
+                            {% if sub != 0 %}
+                                {% for contents1, title1, keyword1, posted_at1, state1, type_id1, poster_id1, post_id1, sub in replies1 %}
+                                    
+                                    {% if sub == post_id2 %}
+                                        <div class="card animated fadeInDown mt-3 mb-3">
+                                            <div class="card-body">
+                                                {% for i in users %}
+                                                    {% if i.id == poster_id2 %}
+                                                        <h6 class="font-italic">@{{ i.code_name}}</h6>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                <div class="row">
+                                                    <div class="col-lg-10 offset-lg-1 text-justify">
+                                                        <p>
+                                                            {% for line in contents1 %}
+                                                                {{ line }}<br>
+                                                            {% endfor %}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                            <p>
+                                {% for line in contents1 %}
+                                    {{ line }}<br>
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span>
+                        {% if user.code_name %}
+                            <a href="#" class="ion-thumbsup mr-5 active_vote"><sup> 3</sup></a>
+                            <a href="#" class="ion-thumbsdown"><sup> 10</sup></a>
+                        {% else %}
+                            <span class="ion-thumbsup mr-5" disabled><sup> 3</sup></span>
+                            <span class="ion-thumbsdown" disabled><sup> 10</sup></span>
+                        {% endif %}
+                        {% if user.code_name %}
+                            <button class="btn bg-transparent text-secondary ml-3 pt-0 pb-0" id="{{ post_id1 }}" onclick="commentBox(this.id)">Reply</button>
+                        {% endif %}
+                    </span>
+                    {% if user.code_name %}
+                        {% for i in users %}
+                            {% if i.id == poster_id1 %}
+                                {% if i.code_name == user.code_name %}
+                                    <a href="/forum/delpostrequest/{{ post_id }}/{{ post_id1 }}/" class="ion-trash-a float-right"></a>
+                                {% else %}
+                                    <a href="#" class="ion-bug float-right"></a>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                        <form action="/forum/comment/{{ post_id1 }}/{{ user.id }}/" class="form-group col-12 animated fadeIn mt-3 dynamic-reply1" method="POST">
+                            <textarea name="get_comment" rows="2" class="col"></textarea>
+                            <button class="btn btn-dark btn-block" type="submit">Reply</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+
+        <!-- <div class="card animated fadeInDown mt-3">
+            <div class="card-body">
+                <h6>@ Someone</h6>
+                <div class="row post-content">
+                    <div class="col-lg-10 offset-lg-1 text-justify">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>
+                    <a href="#" class="ion-thumbsup mr-5"><sup> 106</sup></a>
+                    <a href="#" class="ion-thumbsdown"><sup> 23</sup></a>
+                    <a href="#" class="ml-5">Reply</a>
+                </span>
+                <a href="#" class="ion-bug float-right"></a>
+            </div>
+        </div> -->
+
+        
+<!--         
+        <div class="card animated fadeInDown mt-3">
+            <div class="card-body">
+                <h6>@ Someone</h6>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-justify">
+
+
+
+                        <div class="card animated fadeInDown mt-3 mb-3">
+                            <div class="card-body">
+                                <h6>@ Someone</h6>
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1 text-justify">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>
+                    <a href="#" class="ion-thumbsup mr-5"><sup> 106</sup></a>
+                    <a href="#" class="ion-thumbsdown"><sup> 23</sup></a>
+                    <a href="#" class="ml-5">Reply</a>
+                </span>
+                <a href="#" class="ion-bug float-right"></a>
+            </div>
+        </div> -->
+
+<!--
+        <div class="card animated fadeInDown mt-3">
+            <div class="card-body">
+                <h6>@ Someone</h6>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 text-justify">
+
+
+
+                        <div class="card animated fadeInDown mt-3 mb-3">
+                            <div class="card-body">
+                                <h6>@ Someone</h6>
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1 text-justify">
+
+
+
+
+
+                                        <div class="card animated fadeInDown mt-3 mb-3">
+                                            <div class="card-body">
+                                                <h6>@ Someone</h6>
+                                                <div class="row">
+                                                    <div class="col-lg-10 offset-lg-1 text-justify">
+                                                        <p>
+                                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        
+
+
+
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>
+                    <a href="#" class="ion-thumbsup mr-5"><sup> 106</sup></a>
+                    <a href="#" class="ion-thumbsdown"><sup> 23</sup></a>
+                    <a href="#" class="ml-5">Reply</a>
+                </span>
+                <a href="#" class="ion-bug float-right"></a>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+{% endblock content %}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hernieDev</title>
+
+    <link rel="stylesheet" href="css/mini_lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/mini_lib/css/ionicons.css">
+    <link rel="stylesheet" href="css/mini_lib/css/hover.min.css">
+    <link rel="stylesheet" href="css/mini_lib/css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="bg-dialog dialog-close py-2">
+        <div class="dialog-box bg-light pb-3 mx-2">
+            <div class="row">
+                <div class="col px-0">
+                    <i class="ion-ios-close float-right text-danger dialogClose"></i>
+                </div>
+            </div>
+            
+            <form action="#" method="post" class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="font-weight-bold">Website</h5>
+                        <select name="offer" id="offer" class="form-control mb-2">
+                            <option value="basic">Basic</option>
+                            <option value="standard">Standard</option>
+                            <option value="premium">Premium</option>
+                            <option value="landing">Landing page</option>
+                        </select>
+                        <input type="text" name="domain" id="domain" placeholder="Domain" class="form-control mb-2">
+                        <input type="text" name="website-name" id="website-name" placeholder="Website name" class="form-control mb-2">
+                        <textarea name="website-description" id="website-description" rows="3" placeholder="Website brief description" class="form-control mb-3"></textarea>                                        
+                        
+                        <!-- 
+                        
+                        <input type="text" name="website" id="website" placeholder="Website name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="fname" id="fname" placeholder="First name">
+                        <input type="text" name="mname" id="mname" placeholder="Middle name">
+                        <input type="text" name="lname" id="lname" placeholder="Last name"> -->
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="font-weight-bold">Personal</h5>
+                        <input type="text" name="fname" id="fname" placeholder="First name" class="form-control mb-2">
+                        <input type="text" name="lname" id="lname" placeholder="Last name" class="form-control mb-2">
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-control mb-2">
+                        <input type="number" name="phone" id="phone" placeholder="Phone number" class="form-control mb-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bg-warning py-1 px-2 curved2">
+                            <strong>TIPS:</strong> If you don't want to buy a new domain or you don't have existing domain you can choose from .tk, .ml, .ga, and .cf for <strong>FREE</strong>.
+                        </div>
+                        <button class="btn btn-lg btn-success mt-2 float-right btn-block">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a name="intro"></a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <span class="navbar-brand font-weight-bold">ADMIN</span>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#intro" class="nav-item nav-link active">Projects</a>
+                    <a href="#testimonials" class="nav-item nav-link">Concern</a>
+                    <a href="#pricing" class="nav-item nav-link">Unread</a>
+                    <a href="#projects" class="nav-item nav-link">Trash</a>
+                    <a href="#contact" class="nav-item nav-link">modKey</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="projects">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 my-3">
+                <button class="btn btn-success float-right">
+                    Drop
+                </button>
+                <h3>
+                    Projects
+                </h3>
+                <div class="row">
+                    <table class="col">
+                        <tr>
+                            <th>
+                                Mark
+                            </th>
+                            <th>
+                                Client name
+                            </th>
+                            <th>
+                                Project
+                            </th>
+                            <th>
+                                Project type
+                            </th>
+                            <th>
+                                Domain
+                            </th>
+                            <th>
+                                Time received
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="mark" id="mark">
+                            </td>
+                            <td>
+                                <p>
+                                    Jabien, Hernie
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Sheetmode
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    BASIC
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    sheetmode.tk
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    10/12/2020 12:00PM
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="px-3 pt-5 pb-2 bg-black">
+        <div class="row">
+            <div class="col-md">
+                <h4 class="text-white float-right">
+                    <span class="text-orange">/-/</span>v/
+                </h4>
+                <i class="text-orange ion-android-call">
+                    <span class="text-white">
+                        +639397724280
+                    </span>
+                </i>
+                <span class="text-muted mx-2">|</span>
+                <i class="ion-email text-orange">
+                    <span class="text-white">
+                        herniejabien45@gmail.com
+                    </span>
+                </i>
+                <div class="row mt-3">
+                    <div class="col-md">
+                        <button class="btn-lg btn-outline-warning btn-block" onclick="window.open('#intro', '_self');">
+                            Back to top
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="css/mini_lib/js/jquery.min.js"></script>
+    <script src="css/mini_lib/js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

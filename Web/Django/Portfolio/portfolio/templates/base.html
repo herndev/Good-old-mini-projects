@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Dev</title>
+
+    <!-- CSS STYLINGS -->
+    <link rel="stylesheet" href="{% static 'mini_lib/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/hover.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/ionicons.css' %}">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .masthead{
+            padding-top: 7rem;
+            padding-bottom: calc(11rem - 72px);
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.5)), to(rgba(92, 77, 66, 0.5))), url("{% static 'mini_lib/img/bg-showcase-2.jpg' %}");
+            background: linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(92, 77, 66, 0.5) 100%), url("{% static 'mini_lib/img/bg-showcase-2.jpg' %}");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .navbar-scrolled{
+            background-color: white;
+        }
+
+        #mainNav {
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+        -webkit-transition: background-color 0.2s ease;
+        transition: background-color 0.2s ease;
+        }
+
+        #mainNav .navbar-brand {
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 700;
+        color: #212529;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link {
+        color: #6c757d;
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 0.75rem 0;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+        color: #f4623a;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link.active {
+        color: #f4623a !important;
+        }
+
+        @media (min-width: 992px) {
+            #mainNav {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background-color: transparent;
+            }
+            #mainNav .navbar-brand {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            #mainNav .navbar-brand:hover {
+                color: #fff;
+            }
+            #mainNav .navbar-nav .nav-item .nav-link {
+                color: rgba(255, 255, 255, 0.7);
+                padding: 0 1rem;
+            }
+            #mainNav .navbar-nav .nav-item .nav-link:hover {
+                color: #fff;
+            }
+            #mainNav .navbar-nav .nav-item:last-child .nav-link {
+                padding-right: 0;
+            }
+            #mainNav.navbar-scrolled {
+                -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                background-color: #fff;
+            }
+            #mainNav.navbar-scrolled .navbar-brand {
+                color: #212529;
+            }
+            #mainNav.navbar-scrolled .navbar-brand:hover {
+                color: #f4623a;
+            }
+            #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+                color: #212529;
+            }
+            #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+                color: #f4623a;
+            }
+        }
+
+        section, header{
+            min-height: 650px;
+        }
+        footer{
+            height: 100px;
+        }
+        .page-section{
+            padding-top: 100px;
+        }
+        .bg-orange{
+            background-color: orange;
+        }
+        .text-orange{
+            color: orange;
+        }
+        .social-icons .icon, .dev-icons .icon{
+            font-size: 3em;
+            margin: 0px 15px;
+        }
+
+        .social-icons a{
+            text-decoration: none;
+        }
+
+        .text-skyblue{
+          color: skyblue;
+        }
+        .bg-red{
+          background-color: #dc3545;
+        }
+
+        .bg-tomato{
+          background-color: #f4623a;
+        }
+
+        .portfolio-box-caption{
+          background-color: #f4623a;
+          color: white;
+          display: none;
+          top: 0;
+          width: 100%;
+          height: 205px;
+          text-align: center;
+          padding-top: 70px;
+        }
+        
+        .portfolio-box:hover .img-fluid{
+          display: none;
+        }
+
+        .portfolio-box:hover .portfolio-box-caption{
+          display: block;
+        }
+
+        .element-center{
+          align-items: center;
+        }
+
+    </style>
+    <!-- JAVASCRIPTS -->
+    <script src="{% static 'mini_lib/js/jquery.min.js' %}"></script>
+    <script src="{% static 'mini_lib/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'mini_lib/js/jquery.easing.min.js' %}"></script>
+</head>
+<body>
+  {% block content %}
+  
+  {% endblock %}
+    <script>
+        (function($) {
+            "use strict"; // Start of use strict
+
+            // Smooth scrolling using jQuery easing
+            $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                    scrollTop: (target.offset().top - 72)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+                }
+            });
+
+            // Closes responsive menu when a scroll trigger link is clicked
+            $('.js-scroll-trigger').click(function() {
+                $('.navbar-collapse').collapse('hide');
+            });
+
+            // Activate scrollspy to add active class to navbar items on scroll
+            $('body').scrollspy({
+                target: '#mainNav',
+                offset: 75
+            });
+
+            // Collapse Navbar
+            var navbarCollapse = function() {
+                if ($("#mainNav").offset().top > 100) {
+                $("#mainNav").addClass("navbar-scrolled");
+                } else {
+                $("#mainNav").removeClass("navbar-scrolled");
+                }
+            };
+            // Collapse now if page is not at top
+            navbarCollapse();
+            // Collapse the navbar when page is scrolled
+            $(window).scroll(navbarCollapse);
+
+            })(jQuery); // End of use strict
+
+    </script>
+</body>
+</html>

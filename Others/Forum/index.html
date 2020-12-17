@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="mini_lib/css/animate.css">
+    <link rel="stylesheet" href="mini_lib/css/bootstrap.css">
+    <link rel="stylesheet" href="mini_lib/css/hover.min.css">
+    <link rel="stylesheet" href="mini_lib/css/ionicons.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            color: white;
+        }
+        .content{
+            color: black;
+        }
+        .navbar-nav{
+            display: inline;
+        }
+        button{
+            max-width: 92%;
+        }
+        .post-content{
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        .card-footer a{
+            color: gray;
+        }
+
+        .card-footer .active_vote{
+            color: royalblue;
+        }
+
+        .card:first-child{
+            margin-top: 0px;
+        }
+
+        
+        /* ul{
+            display: inline;
+        } */
+        /* #search_input{
+            width: 500px;
+        } */
+    </style>
+    <script src="mini_lib/js/jquery.min.js"></script>
+    <script src="mini_lib/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="row bg-dark">
+        <div class="col ml-2">
+            <h1 class="ion-android-globe text-center mt-3 mb-3 animated bounceInUp"> sheetMode</h1>
+        </div>
+    </header>
+    <div class="row mt-3">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="hvr-grow col-12 m-0 p-0">
+                <form action="#" class="form-group form-inline col-12 animated fadeIn">
+                    <input type="text" class="form-control col-11" name="search_input" id="search_input" placeholder="Search">
+                    <button class="btn btn-dark ion-search form-control"></button>
+                </form>
+            </div>
+            <ul class="navbar-nav ml-3 animated fadeIn">
+                <li class="list-inline-item btn btn-primary hvr-float-shadow">Login</li>
+                <li class="list-inline-item btn btn-secondary hvr-float-shadow">Signup</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <!-- Content -->
+    <div class="row content mr-2 ml-1">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="hvr-float mt-3 mb-3">
+                <div class="card animated fadeInLeft ">
+                    <div class="card-body">
+                        <h6>@ Someone</h6>
+                        <div class="row post-content">
+                            <div class="col-lg-10 offset-lg-1 text-justify">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur, aspernatur ratione beatae velit ipsam ex asperiores libero nulla in aut similique laborum?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor odio ratione aliquam temporibus enim ab facere, perferendis debitis suscipit! Assumenda beatae nam reiciendis quaerat vitae possimus laboriosam aliquam numquam omnis.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas exercitationem dolor quas. Itaque similique numquam deserunt, voluptatibus recusandae pariatur rerum, expedita beatae impedit necessitatibus iste officia porro reprehenderit eius veniam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mt-2">
+                            <a href="#">View post</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span>
+                            <a href="#" class="ion-thumbsup mr-5 active_vote"><sup> 3</sup></a>
+                            <a href="#" class="ion-thumbsdown"><sup> 10</sup></a>
+                        </span>
+                        <a href="#" class="ion-bug float-right"></a>
+                    </div>
+                </div>  
+            </div>
+            
+
+            <div class="hvr-float mt-3 mb-3">
+                <div class="card animated fadeInRight">
+                    <div class="card-body">
+                        <h6>@ Someone</h6>
+                        <div class="row post-content">
+                            <div class="col-lg-10 offset-lg-1 text-justify">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mt-2">
+                            <a href="#">View post</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span>
+                            <a href="#" class="ion-thumbsup mr-5"><sup> 106</sup></a>
+                            <a href="#" class="ion-thumbsdown"><sup> 23</sup></a>
+                        </span>
+                        <a href="#" class="ion-bug float-right"></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="hvr-float mt-3 mb-3">
+                <div class="card animated fadeInLeft">
+                    <div class="card-body">
+                        <h6>@ Someone</h6>
+                        <div class="row post-content">
+                            <div class="col-lg-10 offset-lg-1 text-justify">
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus accusantium vel nesciunt officiis quia qui cum consequatur.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi facilis inventore sint sapiente vel accusantium ab quis natus, perferendis quibusdam reiciendis veniam id magnam aliquid odio non aspernatur veritatis! Velit?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui ullam rerum totam, reiciendis ipsum nemo eum deserunt excepturi, voluptas recusandae quisquam aliquam sequi ad ut doloribus. Nobis, adipisci eligendi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mt-2">
+                            <a href="#">View post</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span>
+                            <a href="#" class="ion-thumbsup mr-5"><sup> 2.8M</sup></a>
+                            <a href="#" class="ion-thumbsdown"><sup> 1K</sup></a>
+                        </span>
+                        <a href="#" class="ion-bug float-right"></a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="row bg-dark">
+        <div class="col-lg-12 pb-5 pr-4 pl-4 pt-2">
+            <h5 class="ion-android-globe float-right">
+                ShTmode
+            </h5>
+        </div>
+    </footer>
+</body>
+</html

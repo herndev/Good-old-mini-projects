@@ -1,0 +1,13 @@
+body{
+	background: #fff;
+	font-family: Helvetica;
+	padding: 20px;
+	margin: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.printer{
+	display: inline;
+	margin: 0px auto;
+}

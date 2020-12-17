@@ -1,0 +1,68 @@
+<!-- Load libraries from static folder -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- All libraries in static folder are called using {% static 'filename' %} format -->
+    <link rel="stylesheet" href="{% static 'mini_lib/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/hover.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mini_lib/css/ionicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        
+		{% endblock content %}
+    </div>
+    <footer>
+        <div class="row pt-5 mt-5">
+            <div class="col-10 offset-1">
+                <h5 class="float-right font-weight-bold">
+                    /-/
+                    <span class="text-warning">
+                        v/
+                    </span>
+                </h5>
+                <p class="small ml-5">
+                    Copyright © 2020 Hernie Jabien.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<!-- All libraries in static folder are called using {% static 'filename' %} format -->
+<script src="{% static 'mini_lib/js/jquery.min.js' %}"></script>
+<script src="{% static 'mini_lib/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+    var blkbg = document.getElementById("black-background");
+    var dlgbx = document.getElementById("dlgbox");
+
+    function chatnow(){
+        blkbg.style.display = "block";
+        dlgbx.style.display = "block";
+    }
+
+    function comfirmed_chatnow(){
+        window.open("#", "_self");
+    }
+
+    function ok(){
+        blkbg.style.display = "none";
+        dlgbx.style.display = "none";
+    }
+
+
+    // MainChatView
+    
+</script>
+</body>
+</html

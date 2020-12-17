@@ -1,0 +1,35 @@
+/*
+h1{
+	animation: fadeout 6s;
+}
+
+@keyframes fadeout{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+*/
+body {
+      margin: 0;
+      padding: 0;
+      /*
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      */
+}
+
+.video-frame{
+	background: lime;
+	width: 300px;
+}
+
+canvas {
+      position: fixed;
+}
